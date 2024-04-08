@@ -1,0 +1,54 @@
+[2024-04-01T09:52:46.302+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag___dbt.run_model1 scheduled__2024-03-29T00:00:00+00:00 [queued]>
+[2024-04-01T09:52:46.400+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag___dbt.run_model1 scheduled__2024-03-29T00:00:00+00:00 [queued]>
+[2024-04-01T09:52:46.404+0000] {taskinstance.py:2170} INFO - Starting attempt 2 of 2
+[2024-04-01T09:52:46.488+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): run_model1> on 2024-03-29 00:00:00+00:00
+[2024-04-01T09:52:46.500+0000] {standard_task_runner.py:60} INFO - Started process 430 to run task
+[2024-04-01T09:52:46.514+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'dag___dbt', 'run_model1', 'scheduled__2024-03-29T00:00:00+00:00', '--job-id', '99', '--raw', '--subdir', 'DAGS_FOLDER/freshness_test_dag.py', '--cfg-path', '/tmp/tmpcim7f9zv']
+[2024-04-01T09:52:46.529+0000] {standard_task_runner.py:88} INFO - Job 99: Subtask run_model1
+[2024-04-01T09:52:46.721+0000] {task_command.py:423} INFO - Running <TaskInstance: dag___dbt.run_model1 scheduled__2024-03-29T00:00:00+00:00 [running]> on host 62dc842f1ceb
+[2024-04-01T09:52:47.104+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag___dbt' AIRFLOW_CTX_TASK_ID='run_model1' AIRFLOW_CTX_EXECUTION_DATE='2024-03-29T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-03-29T00:00:00+00:00'
+[2024-04-01T09:52:47.110+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-04-01T09:52:47.122+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', '/home/***/.local/bin/dbt run --models my_first_dbt_model my_second_dbt_model  --profiles-dir /home/***/.dbt --project-dir /opt/***/proj']
+[2024-04-01T09:52:47.235+0000] {subprocess.py:86} INFO - Output:
+[2024-04-01T09:53:10.455+0000] {subprocess.py:93} INFO - [0m09:53:10  Running with dbt=1.7.10
+[2024-04-01T09:53:13.646+0000] {subprocess.py:93} INFO - [0m09:53:13  Registered adapter: postgres=1.7.10
+[2024-04-01T09:53:30.004+0000] {subprocess.py:93} INFO - [0m09:53:29  Found 34 models, 2 operations, 5 tests, 1 source, 0 exposures, 0 metrics, 1407 macros, 0 groups, 0 semantic models
+[2024-04-01T09:53:30.050+0000] {subprocess.py:93} INFO - [0m09:53:30
+[2024-04-01T09:53:32.242+0000] {subprocess.py:93} INFO - [0m09:53:32
+[2024-04-01T09:53:32.246+0000] {subprocess.py:93} INFO - [0m09:53:32  Running 1 on-run-start hook
+[2024-04-01T09:53:32.696+0000] {subprocess.py:93} INFO - [0m09:53:32  1 of 1 START hook: elementary.on-run-start.0 ................................... [RUN]
+[2024-04-01T09:53:32.782+0000] {subprocess.py:93} INFO - [0m09:53:32  1 of 1 OK hook: elementary.on-run-start.0 ...................................... [[32mOK[0m in 0.00s]
+[2024-04-01T09:53:32.842+0000] {subprocess.py:93} INFO - [0m09:53:32
+[2024-04-01T09:53:32.936+0000] {subprocess.py:93} INFO - [0m09:53:32  Concurrency: 1 threads (target='dev')
+[2024-04-01T09:53:32.984+0000] {subprocess.py:93} INFO - [0m09:53:32
+[2024-04-01T09:53:33.092+0000] {subprocess.py:93} INFO - [0m09:53:33  1 of 2 START sql table model public.my_first_dbt_model ......................... [RUN]
+[2024-04-01T09:53:34.726+0000] {subprocess.py:93} INFO - [0m09:53:34  1 of 2 OK created sql table model public.my_first_dbt_model .................... [[32mSELECT 2[0m in 1.61s]
+[2024-04-01T09:53:34.761+0000] {subprocess.py:93} INFO - [0m09:53:34  2 of 2 START sql view model public.my_second_dbt_model ......................... [RUN]
+[2024-04-01T09:53:36.033+0000] {subprocess.py:93} INFO - [0m09:53:36  2 of 2 ERROR creating sql view model public.my_second_dbt_model ................ [[31mERROR[0m in 1.26s]
+[2024-04-01T09:53:36.293+0000] {subprocess.py:93} INFO - [0m09:53:36
+[2024-04-01T09:53:36.372+0000] {subprocess.py:93} INFO - [0m09:53:36  Running 1 on-run-end hook
+[2024-04-01T09:53:46.512+0000] {subprocess.py:93} INFO - [0m09:53:46  1 of 1 START hook: elementary.on-run-end.0 ..................................... [RUN]
+[2024-04-01T09:53:46.522+0000] {subprocess.py:93} INFO - [0m09:53:46  1 of 1 OK hook: elementary.on-run-end.0 ........................................ [[32mOK[0m in 0.00s]
+[2024-04-01T09:53:46.532+0000] {subprocess.py:93} INFO - [0m09:53:46
+[2024-04-01T09:53:46.553+0000] {subprocess.py:93} INFO - [0m09:53:46
+[2024-04-01T09:53:46.560+0000] {subprocess.py:93} INFO - [0m09:53:46  Finished running 1 table model, 1 view model, 2 hooks in 0 hours 0 minutes and 16.48 seconds (16.48s).
+[2024-04-01T09:53:46.803+0000] {subprocess.py:93} INFO - [0m09:53:46
+[2024-04-01T09:53:46.808+0000] {subprocess.py:93} INFO - [0m09:53:46  [31mCompleted with 1 error and 0 warnings:[0m
+[2024-04-01T09:53:46.819+0000] {subprocess.py:93} INFO - [0m09:53:46
+[2024-04-01T09:53:46.825+0000] {subprocess.py:93} INFO - [0m09:53:46    Database Error in model my_second_dbt_model (models/example/my_second_dbt_model.sql)
+[2024-04-01T09:53:46.826+0000] {subprocess.py:93} INFO -   ERREUR:  la relation « my_second_dbt_model » existe déjà
+[2024-04-01T09:53:46.827+0000] {subprocess.py:93} INFO -   compiled Code at target/run/proj/models/example/my_second_dbt_model.sql
+[2024-04-01T09:53:46.834+0000] {subprocess.py:93} INFO - [0m09:53:46
+[2024-04-01T09:53:46.840+0000] {subprocess.py:93} INFO - [0m09:53:46  Done. PASS=1 WARN=0 ERROR=1 SKIP=0 TOTAL=2
+[2024-04-01T09:53:48.015+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2024-04-01T09:53:48.038+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2024-04-01T09:53:48.046+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=dag___dbt, task_id=run_model1, execution_date=20240329T000000, start_date=20240401T095246, end_date=20240401T095348
+[2024-04-01T09:53:48.076+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 99 for task run_model1 (Bash command failed. The command returned a non-zero exit code 1.; 430)
+[2024-04-01T09:53:48.126+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-04-01T09:53:48.176+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

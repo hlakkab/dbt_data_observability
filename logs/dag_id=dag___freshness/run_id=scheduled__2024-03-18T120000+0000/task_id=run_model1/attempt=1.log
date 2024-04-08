@@ -1,0 +1,50 @@
+[2024-04-01T10:04:55.164+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag___freshness.run_model1 scheduled__2024-03-18T12:00:00+00:00 [queued]>
+[2024-04-01T10:04:55.220+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag___freshness.run_model1 scheduled__2024-03-18T12:00:00+00:00 [queued]>
+[2024-04-01T10:04:55.230+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2024-04-01T10:04:55.321+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): run_model1> on 2024-03-18 12:00:00+00:00
+[2024-04-01T10:04:55.356+0000] {standard_task_runner.py:60} INFO - Started process 1216 to run task
+[2024-04-01T10:04:55.373+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'dag___freshness', 'run_model1', 'scheduled__2024-03-18T12:00:00+00:00', '--job-id', '184', '--raw', '--subdir', 'DAGS_FOLDER/freshness_test_dag.py', '--cfg-path', '/tmp/tmp81ivtf2w']
+[2024-04-01T10:04:55.379+0000] {standard_task_runner.py:88} INFO - Job 184: Subtask run_model1
+[2024-04-01T10:04:55.588+0000] {task_command.py:423} INFO - Running <TaskInstance: dag___freshness.run_model1 scheduled__2024-03-18T12:00:00+00:00 [running]> on host 62dc842f1ceb
+[2024-04-01T10:04:55.949+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag___freshness' AIRFLOW_CTX_TASK_ID='run_model1' AIRFLOW_CTX_EXECUTION_DATE='2024-03-18T12:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-03-18T12:00:00+00:00'
+[2024-04-01T10:04:55.956+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-04-01T10:04:55.991+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', '/home/***/.local/bin/dbt run --models my_first_dbt_model my_second_dbt_model  --profiles-dir /home/***/.dbt --project-dir /opt/***/proj']
+[2024-04-01T10:04:56.060+0000] {subprocess.py:86} INFO - Output:
+[2024-04-01T10:05:41.499+0000] {subprocess.py:93} INFO - [0m10:05:41  Running with dbt=1.7.10
+[2024-04-01T10:05:43.810+0000] {subprocess.py:93} INFO - [0m10:05:43  Encountered an error:
+[2024-04-01T10:05:43.811+0000] {subprocess.py:93} INFO - [Errno 5] Input/output error: '/opt/***/proj/dbt_project.yml'
+[2024-04-01T10:05:43.821+0000] {subprocess.py:93} INFO - [0m10:05:43  Traceback (most recent call last):
+[2024-04-01T10:05:43.822+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/cli/requires.py", line 91, in wrapper
+[2024-04-01T10:05:43.823+0000] {subprocess.py:93} INFO -     result, success = func(*args, **kwargs)
+[2024-04-01T10:05:43.824+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/cli/requires.py", line 76, in wrapper
+[2024-04-01T10:05:43.825+0000] {subprocess.py:93} INFO -     return func(*args, **kwargs)
+[2024-04-01T10:05:43.826+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/cli/requires.py", line 169, in wrapper
+[2024-04-01T10:05:43.828+0000] {subprocess.py:93} INFO -     return func(*args, **kwargs)
+[2024-04-01T10:05:43.829+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/cli/requires.py", line 185, in wrapper
+[2024-04-01T10:05:43.830+0000] {subprocess.py:93} INFO -     project = load_project(
+[2024-04-01T10:05:43.831+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/config/runtime.py", line 50, in load_project
+[2024-04-01T10:05:43.832+0000] {subprocess.py:93} INFO -     project = Project.from_project_root(
+[2024-04-01T10:05:43.833+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/config/project.py", line 742, in from_project_root
+[2024-04-01T10:05:43.834+0000] {subprocess.py:93} INFO -     partial = PartialProject.from_project_root(project_root, verify_version=verify_version)
+[2024-04-01T10:05:43.835+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/config/project.py", line 565, in from_project_root
+[2024-04-01T10:05:43.836+0000] {subprocess.py:93} INFO -     project_dict = load_raw_project(project_root)
+[2024-04-01T10:05:43.837+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/config/project.py", line 208, in load_raw_project
+[2024-04-01T10:05:43.840+0000] {subprocess.py:93} INFO -     project_dict = _load_yaml(project_yaml_filepath)
+[2024-04-01T10:05:43.841+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/config/project.py", line 97, in _load_yaml
+[2024-04-01T10:05:43.850+0000] {subprocess.py:93} INFO -     contents = load_file_contents(path)
+[2024-04-01T10:05:43.858+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/clients/system.py", line 97, in load_file_contents
+[2024-04-01T10:05:43.870+0000] {subprocess.py:93} INFO -     with open(path, "rb") as handle:
+[2024-04-01T10:05:43.871+0000] {subprocess.py:93} INFO - OSError: [Errno 5] Input/output error: '/opt/***/proj/dbt_project.yml'
+[2024-04-01T10:05:43.890+0000] {subprocess.py:93} INFO - 
+[2024-04-01T10:05:46.488+0000] {subprocess.py:97} INFO - Command exited with return code 2
+[2024-04-01T10:05:46.553+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 2.
+[2024-04-01T10:05:46.577+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=dag___freshness, task_id=run_model1, execution_date=20240318T120000, start_date=20240401T100455, end_date=20240401T100546
+[2024-04-01T10:05:46.631+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 184 for task run_model1 (Bash command failed. The command returned a non-zero exit code 2.; 1216)
+[2024-04-01T10:05:46.677+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-04-01T10:05:46.848+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

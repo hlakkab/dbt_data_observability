@@ -1,0 +1,57 @@
+[2024-04-04T11:48:28.236+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag___fresh.handle_dbt_result manual__2024-04-04T11:48:02.399639+00:00 [queued]>
+[2024-04-04T11:48:28.248+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag___fresh.handle_dbt_result manual__2024-04-04T11:48:02.399639+00:00 [queued]>
+[2024-04-04T11:48:28.249+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2024-04-04T11:48:28.268+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): handle_dbt_result> on 2024-04-04 11:48:02.399639+00:00
+[2024-04-04T11:48:28.275+0000] {standard_task_runner.py:60} INFO - Started process 7059 to run task
+[2024-04-04T11:48:28.280+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'dag___fresh', 'handle_dbt_result', 'manual__2024-04-04T11:48:02.399639+00:00', '--job-id', '411', '--raw', '--subdir', 'DAGS_FOLDER/dbt_dag.py', '--cfg-path', '/tmp/tmpq_aqhwpq']
+[2024-04-04T11:48:28.284+0000] {standard_task_runner.py:88} INFO - Job 411: Subtask handle_dbt_result
+[2024-04-04T11:48:28.346+0000] {task_command.py:423} INFO - Running <TaskInstance: dag___fresh.handle_dbt_result manual__2024-04-04T11:48:02.399639+00:00 [running]> on host 62dc842f1ceb
+[2024-04-04T11:48:28.452+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag___fresh' AIRFLOW_CTX_TASK_ID='handle_dbt_result' AIRFLOW_CTX_EXECUTION_DATE='2024-04-04T11:48:02.399639+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-04-04T11:48:02.399639+00:00'
+[2024-04-04T11:48:28.454+0000] {logging_mixin.py:188} INFO - Result of dbt command:
+[2024-04-04T11:48:28.455+0000] {logging_mixin.py:188} INFO - -------
+[2024-04-04T11:48:28.472+0000] {logging_mixin.py:188} INFO - 11:48:09  Running with dbt=1.7.10
+11:48:10  Registered adapter: postgres=1.7.10
+11:48:18  Found 34 models, 2 operations, 6 tests, 1 source, 0 exposures, 0 metrics, 1407 macros, 0 groups, 0 semantic models
+11:48:18  
+11:48:19  
+11:48:19  Running 1 on-run-start hook
+11:48:19  1 of 1 START hook: elementary.on-run-start.0 ................................... [RUN]
+11:48:19  1 of 1 OK hook: elementary.on-run-start.0 ...................................... [OK in 0.00s]
+11:48:19  
+11:48:19  Concurrency: 1 threads (target='dev')
+11:48:19  
+11:48:19  1 of 6 START test elementary_freshness_anomalies_raw_orders_creation_date ...... [RUN]
+11:48:20  Elementary: Started running data monitors on: POSTGRES.PUBLIC.RAW_ORDERS
+11:48:20  Elementary: Finished running data monitors on: POSTGRES.PUBLIC.RAW_ORDERS
+11:48:21  1 of 6 PASS elementary_freshness_anomalies_raw_orders_creation_date ............ [PASS in 2.05s]
+11:48:21  2 of 6 START test not_null_my_first_dbt_model_id ............................... [RUN]
+11:48:21  2 of 6 FAIL 1 not_null_my_first_dbt_model_id ................................... [FAIL 1 in 0.20s]
+11:48:21  3 of 6 START test not_null_my_second_dbt_model_id .............................. [RUN]
+11:48:21  3 of 6 PASS not_null_my_second_dbt_model_id .................................... [PASS in 0.16s]
+11:48:21  4 of 6 START test not_null_raw_orders_creation_date ............................ [RUN]
+11:48:21  4 of 6 PASS not_null_raw_orders_creation_date .................................. [PASS in 0.17s]
+11:48:21  5 of 6 START test unique_my_first_dbt_model_id ................................. [RUN]
+11:48:22  5 of 6 PASS unique_my_first_dbt_model_id ....................................... [PASS in 0.17s]
+11:48:22  6 of 6 START test unique_my_second_dbt_model_id ................................ [RUN]
+11:48:22  6 of 6 PASS unique_my_second_dbt_model_id ...................................... [PASS in 0.15s]
+11:48:22  
+11:48:22  Running 1 on-run-end hook
+11:48:25  1 of 1 START hook: elementary.on-run-end.0 ..................................... [RUN]
+11:48:25  1 of 1 OK hook: elementary.on-run-end.0 ........................................ [OK in 0.00s]
+11:48:25  
+11:48:25  
+11:48:25  Finished running 6 tests, 2 hooks in 0 hours 0 minutes and 6.85 seconds (6.85s).
+11:48:25  
+11:48:25  Completed with 1 error and 0 warnings:
+11:48:25  
+11:48:25  Failure in test not_null_my_first_dbt_model_id (models/example/schema.yml)
+11:48:25    Got 1 result, configured to fail if != 0
+11:48:25  
+11:48:25    compiled Code at target/compiled/proj/models/example/schema.yml/not_null_my_first_dbt_model_id.sql
+11:48:25  
+11:48:25  Done. PASS=5 WARN=0 ERROR=1 SKIP=0 TOTAL=6
+[2024-04-04T11:48:28.473+0000] {logging_mixin.py:188} INFO - -----------
+[2024-04-04T11:48:28.474+0000] {python.py:201} INFO - Done. Returned value was: None
+[2024-04-04T11:48:28.486+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=dag___fresh, task_id=handle_dbt_result, execution_date=20240404T114802, start_date=20240404T114828, end_date=20240404T114828
+[2024-04-04T11:48:28.532+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-04-04T11:48:28.560+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

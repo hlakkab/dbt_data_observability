@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - database: postgres
+    name: public
+    loaded_at_field: creation_date
+
+    tables:
+
+      - name: freshnes_test
+        freshness: # make this a little more strict
+          error_after:
+            count: 12
+            period: day
+          # Apply a where clause in the freshness query

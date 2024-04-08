@@ -1,0 +1,85 @@
+[2024-04-01T10:36:20.785+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag___fresness.run_model1 scheduled__2024-03-21T00:00:00+00:00 [queued]>
+[2024-04-01T10:36:20.864+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag___fresness.run_model1 scheduled__2024-03-21T00:00:00+00:00 [queued]>
+[2024-04-01T10:36:20.871+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2024-04-01T10:36:21.001+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): run_model1> on 2024-03-21 00:00:00+00:00
+[2024-04-01T10:36:21.014+0000] {standard_task_runner.py:60} INFO - Started process 518 to run task
+[2024-04-01T10:36:21.070+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'dag___fresness', 'run_model1', 'scheduled__2024-03-21T00:00:00+00:00', '--job-id', '250', '--raw', '--subdir', 'DAGS_FOLDER/dbt_dag.py', '--cfg-path', '/tmp/tmp94k_orr1']
+[2024-04-01T10:36:21.103+0000] {standard_task_runner.py:88} INFO - Job 250: Subtask run_model1
+[2024-04-01T10:36:21.725+0000] {task_command.py:423} INFO - Running <TaskInstance: dag___fresness.run_model1 scheduled__2024-03-21T00:00:00+00:00 [running]> on host 62dc842f1ceb
+[2024-04-01T10:36:22.313+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag___fresness' AIRFLOW_CTX_TASK_ID='run_model1' AIRFLOW_CTX_EXECUTION_DATE='2024-03-21T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-03-21T00:00:00+00:00'
+[2024-04-01T10:36:22.326+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-04-01T10:36:22.328+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', '/home/***/.local/bin/dbt run --models  --profiles-dir /home/***/.dbt --project-dir /opt/***/proj']
+[2024-04-01T10:36:22.474+0000] {subprocess.py:86} INFO - Output:
+[2024-04-01T10:36:57.500+0000] {subprocess.py:93} INFO - [0m10:36:57  Running with dbt=1.7.10
+[2024-04-01T10:37:01.520+0000] {subprocess.py:93} INFO - [0m10:37:01  Registered adapter: postgres=1.7.10
+[2024-04-01T10:37:24.286+0000] {subprocess.py:93} INFO - [0m10:37:24  Found 34 models, 2 operations, 5 tests, 1 source, 0 exposures, 0 metrics, 1407 macros, 0 groups, 0 semantic models
+[2024-04-01T10:37:24.301+0000] {subprocess.py:93} INFO - [0m10:37:24  The selection criterion '--profiles-dir' does not match any nodes
+[2024-04-01T10:37:24.305+0000] {subprocess.py:93} INFO - [0m10:37:24  Encountered an error:
+[2024-04-01T10:37:24.306+0000] {subprocess.py:93} INFO - Non-relative patterns are unsupported
+[2024-04-01T10:37:24.337+0000] {subprocess.py:93} INFO - [0m10:37:24  Traceback (most recent call last):
+[2024-04-01T10:37:24.339+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/cli/requires.py", line 91, in wrapper
+[2024-04-01T10:37:24.341+0000] {subprocess.py:93} INFO -     result, success = func(*args, **kwargs)
+[2024-04-01T10:37:24.349+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/cli/requires.py", line 76, in wrapper
+[2024-04-01T10:37:24.408+0000] {subprocess.py:93} INFO -     return func(*args, **kwargs)
+[2024-04-01T10:37:24.420+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/cli/requires.py", line 169, in wrapper
+[2024-04-01T10:37:24.432+0000] {subprocess.py:93} INFO -     return func(*args, **kwargs)
+[2024-04-01T10:37:24.442+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/cli/requires.py", line 198, in wrapper
+[2024-04-01T10:37:24.446+0000] {subprocess.py:93} INFO -     return func(*args, **kwargs)
+[2024-04-01T10:37:24.467+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/cli/requires.py", line 245, in wrapper
+[2024-04-01T10:37:24.474+0000] {subprocess.py:93} INFO -     return func(*args, **kwargs)
+[2024-04-01T10:37:24.476+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/cli/requires.py", line 278, in wrapper
+[2024-04-01T10:37:24.478+0000] {subprocess.py:93} INFO -     return func(*args, **kwargs)
+[2024-04-01T10:37:24.482+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/cli/main.py", line 625, in run
+[2024-04-01T10:37:24.485+0000] {subprocess.py:93} INFO -     results = task.run()
+[2024-04-01T10:37:24.490+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/task/runnable.py", line 454, in run
+[2024-04-01T10:37:24.496+0000] {subprocess.py:93} INFO -     self._runtime_initialize()
+[2024-04-01T10:37:24.503+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/task/compile.py", line 147, in _runtime_initialize
+[2024-04-01T10:37:24.510+0000] {subprocess.py:93} INFO -     super()._runtime_initialize()
+[2024-04-01T10:37:24.512+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/task/runnable.py", line 147, in _runtime_initialize
+[2024-04-01T10:37:24.516+0000] {subprocess.py:93} INFO -     self.job_queue = self.get_graph_queue()
+[2024-04-01T10:37:24.517+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/task/runnable.py", line 140, in get_graph_queue
+[2024-04-01T10:37:24.520+0000] {subprocess.py:93} INFO -     return selector.get_graph_queue(spec)
+[2024-04-01T10:37:24.533+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/graph/selector.py", line 318, in get_graph_queue
+[2024-04-01T10:37:24.559+0000] {subprocess.py:93} INFO -     selected_nodes = self.get_selected(spec)
+[2024-04-01T10:37:24.560+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/graph/selector.py", line 309, in get_selected
+[2024-04-01T10:37:24.561+0000] {subprocess.py:93} INFO -     selected_nodes, indirect_only = self.select_nodes(spec)
+[2024-04-01T10:37:24.562+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/graph/selector.py", line 158, in select_nodes
+[2024-04-01T10:37:24.563+0000] {subprocess.py:93} INFO -     direct_nodes, indirect_nodes = self.select_nodes_recursively(spec)
+[2024-04-01T10:37:24.577+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/graph/selector.py", line 130, in select_nodes_recursively
+[2024-04-01T10:37:24.578+0000] {subprocess.py:93} INFO -     bundles = [self.select_nodes_recursively(component) for component in spec]
+[2024-04-01T10:37:24.581+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/graph/selector.py", line 130, in <listcomp>
+[2024-04-01T10:37:24.582+0000] {subprocess.py:93} INFO -     bundles = [self.select_nodes_recursively(component) for component in spec]
+[2024-04-01T10:37:24.583+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/graph/selector.py", line 130, in select_nodes_recursively
+[2024-04-01T10:37:24.584+0000] {subprocess.py:93} INFO -     bundles = [self.select_nodes_recursively(component) for component in spec]
+[2024-04-01T10:37:24.585+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/graph/selector.py", line 130, in <listcomp>
+[2024-04-01T10:37:24.591+0000] {subprocess.py:93} INFO -     bundles = [self.select_nodes_recursively(component) for component in spec]
+[2024-04-01T10:37:24.597+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/graph/selector.py", line 130, in select_nodes_recursively
+[2024-04-01T10:37:24.605+0000] {subprocess.py:93} INFO -     bundles = [self.select_nodes_recursively(component) for component in spec]
+[2024-04-01T10:37:24.617+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/graph/selector.py", line 130, in <listcomp>
+[2024-04-01T10:37:24.618+0000] {subprocess.py:93} INFO -     bundles = [self.select_nodes_recursively(component) for component in spec]
+[2024-04-01T10:37:24.619+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/graph/selector.py", line 128, in select_nodes_recursively
+[2024-04-01T10:37:24.620+0000] {subprocess.py:93} INFO -     direct_nodes, indirect_nodes = self.get_nodes_from_criteria(spec)
+[2024-04-01T10:37:24.630+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/graph/selector.py", line 82, in get_nodes_from_criteria
+[2024-04-01T10:37:24.633+0000] {subprocess.py:93} INFO -     collected = self.select_included(nodes, spec)
+[2024-04-01T10:37:24.638+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/graph/selector.py", line 68, in select_included
+[2024-04-01T10:37:24.640+0000] {subprocess.py:93} INFO -     return set(method.search(included_nodes, spec.value))
+[2024-04-01T10:37:24.649+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/graph/selector_methods.py", line 413, in search
+[2024-04-01T10:37:24.654+0000] {subprocess.py:93} INFO -     paths = set(p.relative_to(root) for p in root.glob(selector))
+[2024-04-01T10:37:24.657+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/graph/selector_methods.py", line 413, in <genexpr>
+[2024-04-01T10:37:24.659+0000] {subprocess.py:93} INFO -     paths = set(p.relative_to(root) for p in root.glob(selector))
+[2024-04-01T10:37:24.665+0000] {subprocess.py:93} INFO -   File "/usr/local/lib/python3.8/pathlib.py", line 1138, in glob
+[2024-04-01T10:37:24.673+0000] {subprocess.py:93} INFO -     raise NotImplementedError("Non-relative patterns are unsupported")
+[2024-04-01T10:37:24.676+0000] {subprocess.py:93} INFO - NotImplementedError: Non-relative patterns are unsupported
+[2024-04-01T10:37:24.690+0000] {subprocess.py:93} INFO - 
+[2024-04-01T10:37:25.888+0000] {subprocess.py:97} INFO - Command exited with return code 2
+[2024-04-01T10:37:25.914+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 2.
+[2024-04-01T10:37:25.927+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=dag___fresness, task_id=run_model1, execution_date=20240321T000000, start_date=20240401T103620, end_date=20240401T103725
+[2024-04-01T10:37:26.243+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 250 for task run_model1 (Bash command failed. The command returned a non-zero exit code 2.; 518)
+[2024-04-01T10:37:26.304+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-04-01T10:37:26.377+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

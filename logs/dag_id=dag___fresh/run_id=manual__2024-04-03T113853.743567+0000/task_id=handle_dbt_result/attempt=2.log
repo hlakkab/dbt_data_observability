@@ -1,0 +1,49 @@
+[2024-04-03T11:44:29.082+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag___fresh.handle_dbt_result manual__2024-04-03T11:38:53.743567+00:00 [queued]>
+[2024-04-03T11:44:29.093+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag___fresh.handle_dbt_result manual__2024-04-03T11:38:53.743567+00:00 [queued]>
+[2024-04-03T11:44:29.094+0000] {taskinstance.py:2170} INFO - Starting attempt 2 of 2
+[2024-04-03T11:44:29.111+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): handle_dbt_result> on 2024-04-03 11:38:53.743567+00:00
+[2024-04-03T11:44:29.118+0000] {standard_task_runner.py:60} INFO - Started process 2907 to run task
+[2024-04-03T11:44:29.122+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'dag___fresh', 'handle_dbt_result', 'manual__2024-04-03T11:38:53.743567+00:00', '--job-id', '372', '--raw', '--subdir', 'DAGS_FOLDER/dbt_dag.py', '--cfg-path', '/tmp/tmpohudlln6']
+[2024-04-03T11:44:29.125+0000] {standard_task_runner.py:88} INFO - Job 372: Subtask handle_dbt_result
+[2024-04-03T11:44:29.184+0000] {task_command.py:423} INFO - Running <TaskInstance: dag___fresh.handle_dbt_result manual__2024-04-03T11:38:53.743567+00:00 [running]> on host 62dc842f1ceb
+[2024-04-03T11:44:29.283+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag___fresh' AIRFLOW_CTX_TASK_ID='handle_dbt_result' AIRFLOW_CTX_EXECUTION_DATE='2024-04-03T11:38:53.743567+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-04-03T11:38:53.743567+00:00'
+[2024-04-03T11:44:29.303+0000] {logging_mixin.py:188} INFO - Result of dbt command:
+[2024-04-03T11:44:29.305+0000] {logging_mixin.py:188} INFO - 11:39:00  Running with dbt=1.7.10
+11:39:01  Registered adapter: postgres=1.7.10
+11:39:13  Found 34 models, 2 operations, 5 tests, 1 source, 0 exposures, 0 metrics, 1407 macros, 0 groups, 0 semantic models
+11:39:13  
+11:39:14  
+11:39:14  Running 1 on-run-start hook
+11:39:14  1 of 1 START hook: elementary.on-run-start.0 ................................... [RUN]
+11:39:14  1 of 1 OK hook: elementary.on-run-start.0 ...................................... [OK in 0.00s]
+11:39:14  
+11:39:14  Concurrency: 1 threads (target='dev')
+11:39:14  
+11:39:14  1 of 5 START test elementary_freshness_anomalies_raw_orders_creation_date ...... [RUN]
+11:39:15  Elementary: Started running data monitors on: POSTGRES.PUBLIC.RAW_ORDERS
+11:39:16  Elementary: Finished running data monitors on: POSTGRES.PUBLIC.RAW_ORDERS
+11:39:17  1 of 5 PASS elementary_freshness_anomalies_raw_orders_creation_date ............ [PASS in 2.80s]
+11:39:17  2 of 5 START test not_null_my_second_dbt_model_id .............................. [RUN]
+11:39:17  2 of 5 PASS not_null_my_second_dbt_model_id .................................... [PASS in 0.20s]
+11:39:17  3 of 5 START test not_null_raw_orders_creation_date ............................ [RUN]
+11:39:17  3 of 5 PASS not_null_raw_orders_creation_date .................................. [PASS in 0.19s]
+11:39:17  4 of 5 START test unique_my_first_dbt_model_id ................................. [RUN]
+11:39:18  4 of 5 PASS unique_my_first_dbt_model_id ....................................... [PASS in 0.18s]
+11:39:18  5 of 5 START test unique_my_second_dbt_model_id ................................ [RUN]
+11:39:18  5 of 5 PASS unique_my_second_dbt_model_id ...................................... [PASS in 0.19s]
+11:39:18  
+11:39:18  Running 1 on-run-end hook
+11:39:22  1 of 1 START hook: elementary.on-run-end.0 ..................................... [RUN]
+11:39:22  1 of 1 OK hook: elementary.on-run-end.0 ........................................ [OK in 0.00s]
+11:39:22  
+11:39:22  
+11:39:22  Finished running 5 tests, 2 hooks in 0 hours 0 minutes and 8.99 seconds (8.99s).
+11:39:23  
+11:39:23  Completed successfully
+11:39:23  
+11:39:23  Done. PASS=5 WARN=0 ERROR=0 SKIP=0 TOTAL=5
+[2024-04-03T11:44:29.306+0000] {logging_mixin.py:188} INFO - -----------
+[2024-04-03T11:44:29.307+0000] {python.py:201} INFO - Done. Returned value was: None
+[2024-04-03T11:44:29.319+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=dag___fresh, task_id=handle_dbt_result, execution_date=20240403T113853, start_date=20240403T114429, end_date=20240403T114429
+[2024-04-03T11:44:29.375+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-04-03T11:44:29.401+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

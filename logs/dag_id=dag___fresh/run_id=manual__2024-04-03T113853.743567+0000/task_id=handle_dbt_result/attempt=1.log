@@ -1,0 +1,24 @@
+[2024-04-03T11:39:26.356+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag___fresh.handle_dbt_result manual__2024-04-03T11:38:53.743567+00:00 [queued]>
+[2024-04-03T11:39:26.368+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag___fresh.handle_dbt_result manual__2024-04-03T11:38:53.743567+00:00 [queued]>
+[2024-04-03T11:39:26.369+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2024-04-03T11:39:26.389+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): handle_dbt_result> on 2024-04-03 11:38:53.743567+00:00
+[2024-04-03T11:39:26.395+0000] {standard_task_runner.py:60} INFO - Started process 2801 to run task
+[2024-04-03T11:39:26.399+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'dag___fresh', 'handle_dbt_result', 'manual__2024-04-03T11:38:53.743567+00:00', '--job-id', '366', '--raw', '--subdir', 'DAGS_FOLDER/dbt_dag.py', '--cfg-path', '/tmp/tmpz5hfnmsm']
+[2024-04-03T11:39:26.404+0000] {standard_task_runner.py:88} INFO - Job 366: Subtask handle_dbt_result
+[2024-04-03T11:39:26.467+0000] {task_command.py:423} INFO - Running <TaskInstance: dag___fresh.handle_dbt_result manual__2024-04-03T11:38:53.743567+00:00 [running]> on host 62dc842f1ceb
+[2024-04-03T11:39:26.567+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag___fresh' AIRFLOW_CTX_TASK_ID='handle_dbt_result' AIRFLOW_CTX_EXECUTION_DATE='2024-04-03T11:38:53.743567+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-04-03T11:38:53.743567+00:00'
+[2024-04-03T11:39:26.586+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/dbt_dag.py", line 63, in print_and_handle_dbt_command_result
+    full_output = '\n'.join(dbt_command_result)
+TypeError: can only join an iterable
+[2024-04-03T11:39:26.600+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=dag___fresh, task_id=handle_dbt_result, execution_date=20240403T113853, start_date=20240403T113926, end_date=20240403T113926
+[2024-04-03T11:39:26.617+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 366 for task handle_dbt_result (can only join an iterable; 2801)
+[2024-04-03T11:39:26.653+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-04-03T11:39:26.679+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

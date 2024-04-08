@@ -1,0 +1,14 @@
+[2024-04-05T01:44:04.578+0000] {processor.py:161} INFO - Started process (PID=49625) to work on /opt/airflow/dags/freshness_test_dag.py
+[2024-04-05T01:44:04.582+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshness_test_dag.py for tasks to queue
+[2024-04-05T01:44:04.588+0000] {logging_mixin.py:188} INFO - [2024-04-05T01:44:04.587+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshness_test_dag.py
+[2024-04-05T01:44:04.705+0000] {processor.py:840} INFO - DAG(s) 'dag___dbt' retrieved from /opt/airflow/dags/freshness_test_dag.py
+[2024-04-05T01:44:04.850+0000] {logging_mixin.py:188} INFO - [2024-04-05T01:44:04.849+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-05T01:44:04.992+0000] {logging_mixin.py:188} INFO - [2024-04-05T01:44:04.990+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___dbt to 2024-04-04 10:00:00+00:00, run_after=2024-04-05 10:00:00+00:00
+[2024-04-05T01:44:24.893+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshness_test_dag.py took 20.336 seconds
+[2024-04-05T01:44:56.091+0000] {processor.py:161} INFO - Started process (PID=49684) to work on /opt/airflow/dags/freshness_test_dag.py
+[2024-04-05T01:44:56.093+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshness_test_dag.py for tasks to queue
+[2024-04-05T01:44:56.097+0000] {logging_mixin.py:188} INFO - [2024-04-05T01:44:56.095+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshness_test_dag.py
+[2024-04-05T01:44:56.162+0000] {processor.py:840} INFO - DAG(s) 'dag___dbt' retrieved from /opt/airflow/dags/freshness_test_dag.py
+[2024-04-05T01:44:56.219+0000] {logging_mixin.py:188} INFO - [2024-04-05T01:44:56.219+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-05T01:44:56.263+0000] {logging_mixin.py:188} INFO - [2024-04-05T01:44:56.263+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___dbt to 2024-04-04 10:00:00+00:00, run_after=2024-04-05 10:00:00+00:00
+[2024-04-05T01:44:56.302+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshness_test_dag.py took 0.218 seconds

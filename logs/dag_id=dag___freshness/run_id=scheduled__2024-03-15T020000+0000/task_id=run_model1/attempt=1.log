@@ -1,0 +1,42 @@
+[2024-04-01T10:05:18.726+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag___freshness.run_model1 scheduled__2024-03-15T02:00:00+00:00 [queued]>
+[2024-04-01T10:05:18.928+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag___freshness.run_model1 scheduled__2024-03-15T02:00:00+00:00 [queued]>
+[2024-04-01T10:05:18.936+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2024-04-01T10:05:19.774+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): run_model1> on 2024-03-15 02:00:00+00:00
+[2024-04-01T10:05:19.794+0000] {standard_task_runner.py:60} INFO - Started process 1254 to run task
+[2024-04-01T10:05:19.947+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'dag___freshness', 'run_model1', 'scheduled__2024-03-15T02:00:00+00:00', '--job-id', '193', '--raw', '--subdir', 'DAGS_FOLDER/freshness_test_dag.py', '--cfg-path', '/tmp/tmprb4h0jyb']
+[2024-04-01T10:05:19.981+0000] {standard_task_runner.py:88} INFO - Job 193: Subtask run_model1
+[2024-04-01T10:05:20.518+0000] {task_command.py:423} INFO - Running <TaskInstance: dag___freshness.run_model1 scheduled__2024-03-15T02:00:00+00:00 [running]> on host 62dc842f1ceb
+[2024-04-01T10:05:21.633+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag___freshness' AIRFLOW_CTX_TASK_ID='run_model1' AIRFLOW_CTX_EXECUTION_DATE='2024-03-15T02:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-03-15T02:00:00+00:00'
+[2024-04-01T10:05:21.638+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-04-01T10:05:21.640+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', '/home/***/.local/bin/dbt run --models my_first_dbt_model my_second_dbt_model  --profiles-dir /home/***/.dbt --project-dir /opt/***/proj']
+[2024-04-01T10:05:21.726+0000] {subprocess.py:86} INFO - Output:
+[2024-04-01T10:05:53.822+0000] {subprocess.py:93} INFO - [0m10:05:53  Running with dbt=1.7.10
+[2024-04-01T10:05:56.820+0000] {subprocess.py:93} INFO - [0m10:05:56  Registered adapter: postgres=1.7.10
+[2024-04-01T10:06:15.909+0000] {subprocess.py:93} INFO - [0m10:06:15  Found 34 models, 2 operations, 5 tests, 1 source, 0 exposures, 0 metrics, 1407 macros, 0 groups, 0 semantic models
+[2024-04-01T10:06:15.933+0000] {subprocess.py:93} INFO - [0m10:06:15
+[2024-04-01T10:06:17.499+0000] {subprocess.py:93} INFO - [0m10:06:17
+[2024-04-01T10:06:17.502+0000] {subprocess.py:93} INFO - [0m10:06:17  Running 1 on-run-start hook
+[2024-04-01T10:06:17.734+0000] {subprocess.py:93} INFO - [0m10:06:17  1 of 1 START hook: elementary.on-run-start.0 ................................... [RUN]
+[2024-04-01T10:06:17.741+0000] {subprocess.py:93} INFO - [0m10:06:17  1 of 1 OK hook: elementary.on-run-start.0 ...................................... [[32mOK[0m in 0.00s]
+[2024-04-01T10:06:17.744+0000] {subprocess.py:93} INFO - [0m10:06:17
+[2024-04-01T10:06:17.762+0000] {subprocess.py:93} INFO - [0m10:06:17  Concurrency: 1 threads (target='dev')
+[2024-04-01T10:06:17.766+0000] {subprocess.py:93} INFO - [0m10:06:17
+[2024-04-01T10:06:17.800+0000] {subprocess.py:93} INFO - [0m10:06:17  1 of 2 START sql table model public.my_first_dbt_model ......................... [RUN]
+[2024-04-01T10:06:18.917+0000] {subprocess.py:93} INFO - [0m10:06:18  1 of 2 OK created sql table model public.my_first_dbt_model .................... [[32mSELECT 2[0m in 1.11s]
+[2024-04-01T10:06:18.953+0000] {subprocess.py:93} INFO - [0m10:06:18  2 of 2 START sql view model public.my_second_dbt_model ......................... [RUN]
+[2024-04-01T10:06:19.729+0000] {subprocess.py:93} INFO - [0m10:06:19  2 of 2 OK created sql view model public.my_second_dbt_model .................... [[32mCREATE VIEW[0m in 0.76s]
+[2024-04-01T10:06:20.028+0000] {subprocess.py:93} INFO - [0m10:06:20
+[2024-04-01T10:06:20.045+0000] {subprocess.py:93} INFO - [0m10:06:20  Running 1 on-run-end hook
+[2024-04-01T10:06:28.197+0000] {subprocess.py:93} INFO - [0m10:06:28  1 of 1 START hook: elementary.on-run-end.0 ..................................... [RUN]
+[2024-04-01T10:06:28.202+0000] {subprocess.py:93} INFO - [0m10:06:28  1 of 1 OK hook: elementary.on-run-end.0 ........................................ [[32mOK[0m in 0.00s]
+[2024-04-01T10:06:28.204+0000] {subprocess.py:93} INFO - [0m10:06:28
+[2024-04-01T10:06:28.229+0000] {subprocess.py:93} INFO - [0m10:06:28
+[2024-04-01T10:06:28.232+0000] {subprocess.py:93} INFO - [0m10:06:28  Finished running 1 table model, 1 view model, 2 hooks in 0 hours 0 minutes and 12.29 seconds (12.29s).
+[2024-04-01T10:06:28.484+0000] {subprocess.py:93} INFO - [0m10:06:28
+[2024-04-01T10:06:28.487+0000] {subprocess.py:93} INFO - [0m10:06:28  [32mCompleted successfully[0m
+[2024-04-01T10:06:28.493+0000] {subprocess.py:93} INFO - [0m10:06:28
+[2024-04-01T10:06:28.510+0000] {subprocess.py:93} INFO - [0m10:06:28  Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[2024-04-01T10:06:29.728+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-04-01T10:06:29.799+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=dag___freshness, task_id=run_model1, execution_date=20240315T020000, start_date=20240401T100518, end_date=20240401T100629
+[2024-04-01T10:06:29.933+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-04-01T10:06:30.002+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check

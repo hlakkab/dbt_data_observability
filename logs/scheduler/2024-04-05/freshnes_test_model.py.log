@@ -1,0 +1,14 @@
+[2024-04-05T01:44:05.167+0000] {processor.py:161} INFO - Started process (PID=49626) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-05T01:44:05.175+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-05T01:44:05.186+0000] {logging_mixin.py:188} INFO - [2024-04-05T01:44:05.184+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-05T01:44:25.093+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-05T01:44:25.168+0000] {logging_mixin.py:188} INFO - [2024-04-05T01:44:25.168+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-05T01:44:25.397+0000] {logging_mixin.py:188} INFO - [2024-04-05T01:44:25.396+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-05T01:44:25.542+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 20.402 seconds
+[2024-04-05T01:44:56.106+0000] {processor.py:161} INFO - Started process (PID=49685) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-05T01:44:56.108+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-05T01:44:56.110+0000] {logging_mixin.py:188} INFO - [2024-04-05T01:44:56.109+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-05T01:44:56.167+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-05T01:44:56.220+0000] {logging_mixin.py:188} INFO - [2024-04-05T01:44:56.219+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-05T01:44:56.261+0000] {logging_mixin.py:188} INFO - [2024-04-05T01:44:56.260+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-05T01:44:56.302+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.204 seconds

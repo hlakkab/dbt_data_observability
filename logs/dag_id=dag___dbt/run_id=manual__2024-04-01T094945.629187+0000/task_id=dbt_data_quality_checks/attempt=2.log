@@ -1,0 +1,21 @@
+[2024-04-01T09:57:32.243+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag___dbt.dbt_data_quality_checks manual__2024-04-01T09:49:45.629187+00:00 [queued]>
+[2024-04-01T09:57:32.273+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag___dbt.dbt_data_quality_checks manual__2024-04-01T09:49:45.629187+00:00 [queued]>
+[2024-04-01T09:57:32.276+0000] {taskinstance.py:2170} INFO - Starting attempt 2 of 2
+[2024-04-01T09:57:32.335+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): dbt_data_quality_checks> on 2024-04-01 09:49:45.629187+00:00
+[2024-04-01T09:57:32.347+0000] {standard_task_runner.py:60} INFO - Started process 715 to run task
+[2024-04-01T09:57:32.363+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'dag___dbt', 'dbt_data_quality_checks', 'manual__2024-04-01T09:49:45.629187+00:00', '--job-id', '131', '--raw', '--subdir', 'DAGS_FOLDER/dbt_dag.py', '--cfg-path', '/tmp/tmp7o2h1t8m']
+[2024-04-01T09:57:32.372+0000] {standard_task_runner.py:88} INFO - Job 131: Subtask dbt_data_quality_checks
+[2024-04-01T09:57:32.592+0000] {task_command.py:423} INFO - Running <TaskInstance: dag___dbt.dbt_data_quality_checks manual__2024-04-01T09:49:45.629187+00:00 [running]> on host 62dc842f1ceb
+[2024-04-01T09:57:33.058+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag___dbt' AIRFLOW_CTX_TASK_ID='dbt_data_quality_checks' AIRFLOW_CTX_EXECUTION_DATE='2024-04-01T09:49:45.629187+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-04-01T09:49:45.629187+00:00'
+[2024-04-01T09:57:33.073+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-04-01T09:57:33.087+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', '/home/***/.local/bin/dbt test --profiles-dir /home/***/.dbt --project-dir /opt/***/proj']
+[2024-04-01T09:57:33.130+0000] {subprocess.py:86} INFO - Output:
+[2024-04-01T09:57:56.208+0000] {subprocess.py:93} INFO - [0m09:57:56  Running with dbt=1.7.10
+[2024-04-01T09:57:57.880+0000] {subprocess.py:93} INFO - [0m09:57:57  Registered adapter: postgres=1.7.10
+[2024-04-01T09:58:13.247+0000] {local_task_job_runner.py:302} WARNING - State of this instance has been externally set to removed. Terminating instance.
+[2024-04-01T09:58:13.255+0000] {process_utils.py:131} INFO - Sending 15 to group 715. PIDs of all processes in the group: [716, 715]
+[2024-04-01T09:58:13.256+0000] {process_utils.py:86} INFO - Sending the signal 15 to group 715
+[2024-04-01T09:58:13.257+0000] {taskinstance.py:2450} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-04-01T09:58:13.268+0000] {subprocess.py:104} INFO - Sending SIGTERM signal to process group
+[2024-04-01T09:58:13.952+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=715, status='terminated', exitcode=0, started='09:57:31') (715) terminated with exit code 0
+[2024-04-01T09:58:13.969+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=716, status='terminated', started='09:57:32') (716) terminated with exit code None

@@ -1,0 +1,52 @@
+[2024-04-01T09:56:47.826+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag___dbt.dbt_freshness_check scheduled__2024-03-30T11:00:00+00:00 [queued]>
+[2024-04-01T09:56:47.859+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag___dbt.dbt_freshness_check scheduled__2024-03-30T11:00:00+00:00 [queued]>
+[2024-04-01T09:56:47.860+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2024-04-01T09:56:47.896+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): dbt_freshness_check> on 2024-03-30 11:00:00+00:00
+[2024-04-01T09:56:47.911+0000] {standard_task_runner.py:60} INFO - Started process 658 to run task
+[2024-04-01T09:56:47.920+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'dag___dbt', 'dbt_freshness_check', 'scheduled__2024-03-30T11:00:00+00:00', '--job-id', '120', '--raw', '--subdir', 'DAGS_FOLDER/freshness_test_dag.py', '--cfg-path', '/tmp/tmpbmo_1vyv']
+[2024-04-01T09:56:47.925+0000] {standard_task_runner.py:88} INFO - Job 120: Subtask dbt_freshness_check
+[2024-04-01T09:56:48.040+0000] {task_command.py:423} INFO - Running <TaskInstance: dag___dbt.dbt_freshness_check scheduled__2024-03-30T11:00:00+00:00 [running]> on host 62dc842f1ceb
+[2024-04-01T09:56:48.253+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag___dbt' AIRFLOW_CTX_TASK_ID='dbt_freshness_check' AIRFLOW_CTX_EXECUTION_DATE='2024-03-30T11:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-03-30T11:00:00+00:00'
+[2024-04-01T09:56:48.258+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-04-01T09:56:48.260+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', '/home/***/.local/bin/dbt test --profiles-dir /home/***/.dbt --project-dir /opt/***/proj']
+[2024-04-01T09:56:48.284+0000] {subprocess.py:86} INFO - Output:
+[2024-04-01T09:57:04.356+0000] {subprocess.py:93} INFO - [0m09:57:04  Running with dbt=1.7.10
+[2024-04-01T09:57:07.808+0000] {subprocess.py:93} INFO - [0m09:57:07  Registered adapter: postgres=1.7.10
+[2024-04-01T09:57:13.603+0000] {subprocess.py:93} INFO - [0m09:57:13  Encountered an error:
+[2024-04-01T09:57:13.606+0000] {subprocess.py:93} INFO - [Errno 5] Input/output error: '/opt/***/proj/dbt_packages/dbt_expectations/macros/schema_tests/column_values_basic/expect_column_values_to_not_be_in_set.sql'
+[2024-04-01T09:57:13.635+0000] {subprocess.py:93} INFO - [0m09:57:13  Traceback (most recent call last):
+[2024-04-01T09:57:13.638+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/cli/requires.py", line 91, in wrapper
+[2024-04-01T09:57:13.649+0000] {subprocess.py:93} INFO -     result, success = func(*args, **kwargs)
+[2024-04-01T09:57:13.654+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/cli/requires.py", line 76, in wrapper
+[2024-04-01T09:57:13.656+0000] {subprocess.py:93} INFO -     return func(*args, **kwargs)
+[2024-04-01T09:57:13.658+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/cli/requires.py", line 169, in wrapper
+[2024-04-01T09:57:13.659+0000] {subprocess.py:93} INFO -     return func(*args, **kwargs)
+[2024-04-01T09:57:13.660+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/cli/requires.py", line 198, in wrapper
+[2024-04-01T09:57:13.661+0000] {subprocess.py:93} INFO -     return func(*args, **kwargs)
+[2024-04-01T09:57:13.667+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/cli/requires.py", line 245, in wrapper
+[2024-04-01T09:57:13.672+0000] {subprocess.py:93} INFO -     return func(*args, **kwargs)
+[2024-04-01T09:57:13.673+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/cli/requires.py", line 271, in wrapper
+[2024-04-01T09:57:13.676+0000] {subprocess.py:93} INFO -     ctx.obj["manifest"] = parse_manifest(
+[2024-04-01T09:57:13.678+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/parser/manifest.py", line 1798, in parse_manifest
+[2024-04-01T09:57:13.683+0000] {subprocess.py:93} INFO -     manifest = ManifestLoader.get_full_manifest(
+[2024-04-01T09:57:13.685+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/parser/manifest.py", line 318, in get_full_manifest
+[2024-04-01T09:57:13.690+0000] {subprocess.py:93} INFO -     manifest = loader.load()
+[2024-04-01T09:57:13.694+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/parser/manifest.py", line 365, in load
+[2024-04-01T09:57:13.696+0000] {subprocess.py:93} INFO -     file_reader.read_files()
+[2024-04-01T09:57:13.698+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/parser/read_files.py", line 203, in read_files
+[2024-04-01T09:57:13.705+0000] {subprocess.py:93} INFO -     self.read_files_for_project(project, file_types)
+[2024-04-01T09:57:13.706+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/parser/read_files.py", line 210, in read_files_for_project
+[2024-04-01T09:57:13.708+0000] {subprocess.py:93} INFO -     project_files[file_type_info["parser"]] = read_files_for_parser(
+[2024-04-01T09:57:13.709+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/parser/read_files.py", line 158, in read_files_for_parser
+[2024-04-01T09:57:13.711+0000] {subprocess.py:93} INFO -     source_files = get_source_files(
+[2024-04-01T09:57:13.712+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/parser/read_files.py", line 147, in get_source_files
+[2024-04-01T09:57:13.712+0000] {subprocess.py:93} INFO -     file = load_source_file(fp, parse_file_type, project.project_name, saved_files)
+[2024-04-01T09:57:13.713+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/parser/read_files.py", line 75, in load_source_file
+[2024-04-01T09:57:13.720+0000] {subprocess.py:93} INFO -     file_contents = load_file_contents(path.absolute_path, strip=True)
+[2024-04-01T09:57:13.770+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/clients/system.py", line 97, in load_file_contents
+[2024-04-01T09:57:13.772+0000] {subprocess.py:93} INFO -     with open(path, "rb") as handle:
+[2024-04-01T09:57:13.773+0000] {subprocess.py:93} INFO - OSError: [Errno 5] Input/output error: '/opt/***/proj/dbt_packages/dbt_expectations/macros/schema_tests/column_values_basic/expect_column_values_to_not_be_in_set.sql'
+[2024-04-01T09:57:13.809+0000] {subprocess.py:93} INFO - 
+[2024-04-01T09:57:16.909+0000] {subprocess.py:97} INFO - Command exited with return code 2
+[2024-04-01T09:57:17.657+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-04-01T09:57:17.759+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,17 @@
+[2024-04-08T10:33:45.653+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag___fresh.handle_dbt_result scheduled__2024-04-07T00:00:00+00:00 [queued]>
+[2024-04-08T10:33:45.684+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag___fresh.handle_dbt_result scheduled__2024-04-07T00:00:00+00:00 [queued]>
+[2024-04-08T10:33:45.692+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2024-04-08T10:33:45.763+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): handle_dbt_result> on 2024-04-07 00:00:00+00:00
+[2024-04-08T10:33:45.781+0000] {standard_task_runner.py:60} INFO - Started process 193 to run task
+[2024-04-08T10:33:45.809+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'dag___fresh', 'handle_dbt_result', 'scheduled__2024-04-07T00:00:00+00:00', '--job-id', '433', '--raw', '--subdir', 'DAGS_FOLDER/dbt_dag.py', '--cfg-path', '/tmp/tmpdris2lxj']
+[2024-04-08T10:33:45.815+0000] {standard_task_runner.py:88} INFO - Job 433: Subtask handle_dbt_result
+[2024-04-08T10:33:45.948+0000] {task_command.py:423} INFO - Running <TaskInstance: dag___fresh.handle_dbt_result scheduled__2024-04-07T00:00:00+00:00 [running]> on host 62dc842f1ceb
+[2024-04-08T10:33:46.235+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag___fresh' AIRFLOW_CTX_TASK_ID='handle_dbt_result' AIRFLOW_CTX_EXECUTION_DATE='2024-04-07T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-04-07T00:00:00+00:00'
+[2024-04-08T10:33:46.241+0000] {logging_mixin.py:188} INFO - Result of dbt command:
+[2024-04-08T10:33:46.243+0000] {logging_mixin.py:188} INFO - -------
+[2024-04-08T10:33:46.276+0000] {logging_mixin.py:188} INFO - {'elementary_freshness_anomalies_raw_orders_creation_date': 'PASS', 'not_null_my_first_dbt_model_id': 'FAIL', 'not_null_my_second_dbt_model_id': 'PASS', 'not_null_raw_orders_creation_date': 'PASS', 'unique_my_first_dbt_model_id': 'PASS', 'unique_my_second_dbt_model_id': 'PASS'}
+[2024-04-08T10:33:46.277+0000] {logging_mixin.py:188} INFO - -----------
+[2024-04-08T10:33:46.278+0000] {python.py:201} INFO - Done. Returned value was: None
+[2024-04-08T10:33:46.304+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=dag___fresh, task_id=handle_dbt_result, execution_date=20240407T000000, start_date=20240408T103345, end_date=20240408T103346
+[2024-04-08T10:33:46.389+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-04-08T10:33:46.450+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

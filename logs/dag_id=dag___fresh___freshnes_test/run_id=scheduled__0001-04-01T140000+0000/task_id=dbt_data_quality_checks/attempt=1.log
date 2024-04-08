@@ -1,0 +1,61 @@
+[2024-04-01T11:35:44.867+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag___fresh___freshnes_test.dbt_data_quality_checks scheduled__0001-04-01T14:00:00+00:00 [queued]>
+[2024-04-01T11:35:44.906+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag___fresh___freshnes_test.dbt_data_quality_checks scheduled__0001-04-01T14:00:00+00:00 [queued]>
+[2024-04-01T11:35:44.907+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2024-04-01T11:35:45.142+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): dbt_data_quality_checks> on 0001-04-01 14:00:00+00:00
+[2024-04-01T11:35:45.170+0000] {standard_task_runner.py:60} INFO - Started process 1709 to run task
+[2024-04-01T11:35:45.188+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'dag___fresh___freshnes_test', 'dbt_data_quality_checks', 'scheduled__0001-04-01T14:00:00+00:00', '--job-id', '285', '--raw', '--subdir', 'DAGS_FOLDER/freshnes_test_model.py', '--cfg-path', '/tmp/tmpsj3gysjc']
+[2024-04-01T11:35:45.205+0000] {standard_task_runner.py:88} INFO - Job 285: Subtask dbt_data_quality_checks
+[2024-04-01T11:35:45.563+0000] {task_command.py:423} INFO - Running <TaskInstance: dag___fresh___freshnes_test.dbt_data_quality_checks scheduled__0001-04-01T14:00:00+00:00 [running]> on host 62dc842f1ceb
+[2024-04-01T11:35:45.951+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag___fresh___freshnes_test' AIRFLOW_CTX_TASK_ID='dbt_data_quality_checks' AIRFLOW_CTX_EXECUTION_DATE='0001-04-01T14:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__0001-04-01T14:00:00+00:00'
+[2024-04-01T11:35:45.960+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-04-01T11:35:45.966+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', '/home/***/.local/bin/dbt source freshness --select "source:public.freshnes_test" --profiles-dir /home/***/.dbt --project-dir /opt/***/proj']
+[2024-04-01T11:35:46.141+0000] {subprocess.py:86} INFO - Output:
+[2024-04-01T11:36:20.546+0000] {subprocess.py:93} INFO - [0m11:36:20  Running with dbt=1.7.10
+[2024-04-01T11:36:26.872+0000] {subprocess.py:93} INFO - [0m11:36:26  Registered adapter: postgres=1.7.10
+[2024-04-01T11:36:59.657+0000] {subprocess.py:93} INFO - [0m11:36:59  Found 34 models, 2 operations, 5 tests, 1 source, 0 exposures, 0 metrics, 1407 macros, 0 groups, 0 semantic models
+[2024-04-01T11:36:59.690+0000] {subprocess.py:93} INFO - [0m11:36:59
+[2024-04-01T11:37:01.735+0000] {subprocess.py:93} INFO - [0m11:37:01  Concurrency: 1 threads (target='dev')
+[2024-04-01T11:37:01.742+0000] {subprocess.py:93} INFO - [0m11:37:01
+[2024-04-01T11:37:01.844+0000] {subprocess.py:93} INFO - [0m11:37:01  1 of 1 START freshness of public.freshnes_test ................................. [RUN]
+[2024-04-01T11:37:02.590+0000] {subprocess.py:93} INFO - [0m11:37:02  1 of 1 PASS freshness of public.freshnes_test .................................. [[32mPASS[0m in 0.73s]
+[2024-04-01T11:37:03.035+0000] {subprocess.py:93} INFO - [0m11:37:03  Encountered an error:
+[2024-04-01T11:37:03.046+0000] {subprocess.py:93} INFO - [Errno 5] Input/output error: '/opt/***/proj/target/semantic_manifest.json'
+[2024-04-01T11:37:03.146+0000] {subprocess.py:93} INFO - [0m11:37:03  Traceback (most recent call last):
+[2024-04-01T11:37:03.159+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/cli/requires.py", line 91, in wrapper
+[2024-04-01T11:37:03.167+0000] {subprocess.py:93} INFO -     result, success = func(*args, **kwargs)
+[2024-04-01T11:37:03.177+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/cli/requires.py", line 76, in wrapper
+[2024-04-01T11:37:03.182+0000] {subprocess.py:93} INFO -     return func(*args, **kwargs)
+[2024-04-01T11:37:03.199+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/cli/requires.py", line 169, in wrapper
+[2024-04-01T11:37:03.208+0000] {subprocess.py:93} INFO -     return func(*args, **kwargs)
+[2024-04-01T11:37:03.214+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/cli/requires.py", line 198, in wrapper
+[2024-04-01T11:37:03.218+0000] {subprocess.py:93} INFO -     return func(*args, **kwargs)
+[2024-04-01T11:37:03.229+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/cli/requires.py", line 245, in wrapper
+[2024-04-01T11:37:03.234+0000] {subprocess.py:93} INFO -     return func(*args, **kwargs)
+[2024-04-01T11:37:03.248+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/cli/requires.py", line 278, in wrapper
+[2024-04-01T11:37:03.253+0000] {subprocess.py:93} INFO -     return func(*args, **kwargs)
+[2024-04-01T11:37:03.257+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/cli/main.py", line 847, in freshness
+[2024-04-01T11:37:03.275+0000] {subprocess.py:93} INFO -     results = task.run()
+[2024-04-01T11:37:03.293+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/task/runnable.py", line 489, in run
+[2024-04-01T11:37:03.307+0000] {subprocess.py:93} INFO -     write_manifest(self.manifest, self.config.project_target_path)
+[2024-04-01T11:37:03.325+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/parser/manifest.py", line 1793, in write_manifest
+[2024-04-01T11:37:03.357+0000] {subprocess.py:93} INFO -     write_semantic_manifest(manifest=manifest, target_path=target_path)
+[2024-04-01T11:37:03.382+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/parser/manifest.py", line 1786, in write_semantic_manifest
+[2024-04-01T11:37:03.398+0000] {subprocess.py:93} INFO -     semantic_manifest.write_json_to_file(path)
+[2024-04-01T11:37:03.399+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/contracts/graph/semantic_manifest.py", line 57, in write_json_to_file
+[2024-04-01T11:37:03.405+0000] {subprocess.py:93} INFO -     write_file(file_path, json)
+[2024-04-01T11:37:03.413+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/clients/system.py", line 169, in write_file
+[2024-04-01T11:37:03.415+0000] {subprocess.py:93} INFO -     with open(path, "w", encoding="utf-8") as f:
+[2024-04-01T11:37:03.418+0000] {subprocess.py:93} INFO - OSError: [Errno 5] Input/output error: '/opt/***/proj/target/semantic_manifest.json'
+[2024-04-01T11:37:03.422+0000] {subprocess.py:93} INFO - 
+[2024-04-01T11:37:05.298+0000] {subprocess.py:97} INFO - Command exited with return code 2
+[2024-04-01T11:37:05.371+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 2.
+[2024-04-01T11:37:05.387+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=dag___fresh___freshnes_test, task_id=dbt_data_quality_checks, execution_date=10401T140000, start_date=20240401T113544, end_date=20240401T113705
+[2024-04-01T11:37:05.564+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 285 for task dbt_data_quality_checks (Bash command failed. The command returned a non-zero exit code 2.; 1709)
+[2024-04-01T11:37:05.640+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-04-01T11:37:05.740+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

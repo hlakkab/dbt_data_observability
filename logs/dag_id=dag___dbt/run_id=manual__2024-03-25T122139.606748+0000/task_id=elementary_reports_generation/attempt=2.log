@@ -1,0 +1,38 @@
+[2024-03-25T12:34:16.316+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag___dbt.elementary_reports_generation manual__2024-03-25T12:21:39.606748+00:00 [queued]>
+[2024-03-25T12:34:16.363+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag___dbt.elementary_reports_generation manual__2024-03-25T12:21:39.606748+00:00 [queued]>
+[2024-03-25T12:34:16.365+0000] {taskinstance.py:2170} INFO - Starting attempt 2 of 2
+[2024-03-25T12:34:16.444+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): elementary_reports_generation> on 2024-03-25 12:21:39.606748+00:00
+[2024-03-25T12:34:16.468+0000] {standard_task_runner.py:60} INFO - Started process 1088 to run task
+[2024-03-25T12:34:16.487+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'dag___dbt', 'elementary_reports_generation', 'manual__2024-03-25T12:21:39.606748+00:00', '--job-id', '55', '--raw', '--subdir', 'DAGS_FOLDER/dbt_dag.py', '--cfg-path', '/tmp/tmpsiksv__7']
+[2024-03-25T12:34:16.500+0000] {standard_task_runner.py:88} INFO - Job 55: Subtask elementary_reports_generation
+[2024-03-25T12:34:16.775+0000] {task_command.py:423} INFO - Running <TaskInstance: dag___dbt.elementary_reports_generation manual__2024-03-25T12:21:39.606748+00:00 [running]> on host 62dc842f1ceb
+[2024-03-25T12:34:17.220+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag___dbt' AIRFLOW_CTX_TASK_ID='elementary_reports_generation' AIRFLOW_CTX_EXECUTION_DATE='2024-03-25T12:21:39.606748+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-25T12:21:39.606748+00:00'
+[2024-03-25T12:34:17.229+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-03-25T12:34:17.236+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', '/home/***/.local/bin/edr report']
+[2024-03-25T12:34:17.316+0000] {subprocess.py:86} INFO - Output:
+[2024-03-25T12:34:26.282+0000] {subprocess.py:93} INFO -     ________                          __
+[2024-03-25T12:34:26.290+0000] {subprocess.py:93} INFO -    / ____/ /__  ____ ___  ___  ____  / /_____ ________  __
+[2024-03-25T12:34:26.292+0000] {subprocess.py:93} INFO -   / __/ / / _ \/ __ `__ \/ _ \/ __ \/ __/ __ `/ ___/ / / /
+[2024-03-25T12:34:26.293+0000] {subprocess.py:93} INFO -  / /___/ /  __/ / / / / /  __/ / / / /_/ /_/ / /  / /_/ /
+[2024-03-25T12:34:26.295+0000] {subprocess.py:93} INFO - /_____/_/\___/_/ /_/ /_/\___/_/ /_/\__/\__,_/_/   \__, /
+[2024-03-25T12:34:26.296+0000] {subprocess.py:93} INFO -                                                  /____/
+[2024-03-25T12:34:26.301+0000] {subprocess.py:93} INFO - 
+[2024-03-25T12:34:26.870+0000] {subprocess.py:93} INFO - Any feedback and suggestions are welcomed! join our community here - https://bit.ly/slack-elementary
+[2024-03-25T12:34:26.873+0000] {subprocess.py:93} INFO - 
+[2024-03-25T12:34:26.877+0000] {subprocess.py:93} INFO - 2024-03-25 12:34:26 — INFO — Running with edr=0.14.1
+[2024-03-25T12:35:02.733+0000] {subprocess.py:93} INFO - 2024-03-25 12:35:02 — INFO — edr (0.14.1) and Elementary's dbt package (0.14.1) are compatible.
+[2024-03-25T12:35:19.488+0000] {subprocess.py:93} INFO - 2024-03-25 12:35:19 — INFO — Elementary's database and schema: '"postgres.public_elementary"'
+[2024-03-25T12:35:19.490+0000] {subprocess.py:93} INFO - 2024-03-25 12:35:19 — INFO — Running dbt --log-format json run-operation elementary.log_macro_results --args {"macro_name": "elementary_cli.get_test_results", "macro_args": {"days_back": 7, "invocations_per_test": 720, "disable_passed_test_metrics": false}} --project-dir /home/***/.local/lib/python3.8/site-packages/elementary/monitor/dbt_project
+[2024-03-25T12:35:40.096+0000] {subprocess.py:93} INFO - 2024-03-25 12:35:40 — INFO — Running dbt --log-format json run-operation elementary.log_macro_results --args {"macro_name": "elementary_cli.get_source_freshness_results", "macro_args": {"days_back": 7, "invocations_per_test": 720}} --project-dir /home/***/.local/lib/python3.8/site-packages/elementary/monitor/dbt_project
+[2024-03-25T12:36:01.456+0000] {subprocess.py:93} INFO - 2024-03-25 12:36:01 — INFO — Running dbt --log-format json run-operation elementary.log_macro_results --args {"macro_name": "elementary_cli.get_models", "macro_args": {"exclude_elementary": true}} --project-dir /home/***/.local/lib/python3.8/site-packages/elementary/monitor/dbt_project
+[2024-03-25T12:36:23.919+0000] {subprocess.py:93} INFO - 2024-03-25 12:36:23 — INFO — Running dbt --log-format json run-operation elementary.log_macro_results --args {"macro_name": "elementary_cli.get_sources", "macro_args": {}} --project-dir /home/***/.local/lib/python3.8/site-packages/elementary/monitor/dbt_project
+[2024-03-25T12:36:56.043+0000] {subprocess.py:93} INFO - 2024-03-25 12:36:56 — INFO — Running dbt --log-format json run-operation elementary.log_macro_results --args {"macro_name": "elementary_cli.get_exposures", "macro_args": {}} --project-dir /home/***/.local/lib/python3.8/site-packages/elementary/monitor/dbt_project
+[2024-03-25T12:37:19.756+0000] {subprocess.py:93} INFO - 2024-03-25 12:37:19 — INFO — Running dbt --log-format json run-operation elementary.log_macro_results --args {"macro_name": "elementary_cli.get_models_runs", "macro_args": {"days_back": 7, "exclude_elementary": true}} --project-dir /home/***/.local/lib/python3.8/site-packages/elementary/monitor/dbt_project
+[2024-03-25T12:37:38.898+0000] {subprocess.py:93} INFO - 2024-03-25 12:37:38 — INFO — Running dbt --log-format json run-operation elementary.log_macro_results --args {"macro_name": "elementary_cli.get_dbt_models_test_coverage", "macro_args": {}} --project-dir /home/***/.local/lib/python3.8/site-packages/elementary/monitor/dbt_project
+[2024-03-25T12:37:56.385+0000] {subprocess.py:93} INFO - 2024-03-25 12:37:56 — INFO — Running dbt --log-format json run-operation elementary.log_macro_results --args {"macro_name": "elementary_cli.get_nodes_depends_on_nodes", "macro_args": {"exclude_elementary": true}} --project-dir /home/***/.local/lib/python3.8/site-packages/elementary/monitor/dbt_project
+[2024-03-25T12:38:09.955+0000] {subprocess.py:93} INFO - 2024-03-25 12:38:09 — INFO — Running dbt --log-format json run-operation elementary.log_macro_results --args {"macro_name": "elementary_cli.get_models_latest_invocation", "macro_args": {}} --project-dir /home/***/.local/lib/python3.8/site-packages/elementary/monitor/dbt_project
+[2024-03-25T12:38:19.182+0000] {subprocess.py:93} INFO - 2024-03-25 12:38:19 — INFO — Running dbt --log-format json run-operation elementary.log_macro_results --args {"macro_name": "elementary_cli.get_models_latest_invocations_data", "macro_args": {}} --project-dir /home/***/.local/lib/python3.8/site-packages/elementary/monitor/dbt_project
+[2024-03-25T12:38:28.504+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-03-25T12:38:28.545+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=dag___dbt, task_id=elementary_reports_generation, execution_date=20240325T122139, start_date=20240325T123416, end_date=20240325T123828
+[2024-03-25T12:38:28.610+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-25T12:38:28.642+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

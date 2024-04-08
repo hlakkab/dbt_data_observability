@@ -1,0 +1,63 @@
+[2024-04-01T10:09:34.086+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: freshness___dbt.run_model1 scheduled__2024-03-19T00:00:00+00:00 [queued]>
+[2024-04-01T10:09:34.148+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: freshness___dbt.run_model1 scheduled__2024-03-19T00:00:00+00:00 [queued]>
+[2024-04-01T10:09:34.149+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2024-04-01T10:09:34.546+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): run_model1> on 2024-03-19 00:00:00+00:00
+[2024-04-01T10:09:34.554+0000] {standard_task_runner.py:60} INFO - Started process 1478 to run task
+[2024-04-01T10:09:34.620+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'freshness___dbt', 'run_model1', 'scheduled__2024-03-19T00:00:00+00:00', '--job-id', '211', '--raw', '--subdir', 'DAGS_FOLDER/freshness_dag.py', '--cfg-path', '/tmp/tmp8knilaxw']
+[2024-04-01T10:09:34.628+0000] {standard_task_runner.py:88} INFO - Job 211: Subtask run_model1
+[2024-04-01T10:09:34.841+0000] {task_command.py:423} INFO - Running <TaskInstance: freshness___dbt.run_model1 scheduled__2024-03-19T00:00:00+00:00 [running]> on host 62dc842f1ceb
+[2024-04-01T10:09:35.058+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='freshness___dbt' AIRFLOW_CTX_TASK_ID='run_model1' AIRFLOW_CTX_EXECUTION_DATE='2024-03-19T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-03-19T00:00:00+00:00'
+[2024-04-01T10:09:35.063+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-04-01T10:09:35.067+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', '/home/***/.local/bin/dbt run --models  --profiles-dir /home/***/.dbt --project-dir /opt/***/proj']
+[2024-04-01T10:09:35.137+0000] {subprocess.py:86} INFO - Output:
+[2024-04-01T10:10:05.221+0000] {subprocess.py:93} INFO - [0m10:10:05  Running with dbt=1.7.10
+[2024-04-01T10:10:08.745+0000] {subprocess.py:93} INFO - [0m10:10:08  Registered adapter: postgres=1.7.10
+[2024-04-01T10:10:20.012+0000] {subprocess.py:93} INFO - [0m10:10:20  Encountered an error:
+[2024-04-01T10:10:20.015+0000] {subprocess.py:93} INFO - [Errno 5] Input/output error: '/opt/***/proj/dbt_packages/elementary/macros/utils/graph/get_nodes_by_unique_ids.sql'
+[2024-04-01T10:10:20.031+0000] {subprocess.py:93} INFO - [0m10:10:20  Traceback (most recent call last):
+[2024-04-01T10:10:20.032+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/cli/requires.py", line 91, in wrapper
+[2024-04-01T10:10:20.033+0000] {subprocess.py:93} INFO -     result, success = func(*args, **kwargs)
+[2024-04-01T10:10:20.034+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/cli/requires.py", line 76, in wrapper
+[2024-04-01T10:10:20.035+0000] {subprocess.py:93} INFO -     return func(*args, **kwargs)
+[2024-04-01T10:10:20.036+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/cli/requires.py", line 169, in wrapper
+[2024-04-01T10:10:20.037+0000] {subprocess.py:93} INFO -     return func(*args, **kwargs)
+[2024-04-01T10:10:20.038+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/cli/requires.py", line 198, in wrapper
+[2024-04-01T10:10:20.046+0000] {subprocess.py:93} INFO -     return func(*args, **kwargs)
+[2024-04-01T10:10:20.047+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/cli/requires.py", line 245, in wrapper
+[2024-04-01T10:10:20.048+0000] {subprocess.py:93} INFO -     return func(*args, **kwargs)
+[2024-04-01T10:10:20.049+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/cli/requires.py", line 271, in wrapper
+[2024-04-01T10:10:20.051+0000] {subprocess.py:93} INFO -     ctx.obj["manifest"] = parse_manifest(
+[2024-04-01T10:10:20.051+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/parser/manifest.py", line 1798, in parse_manifest
+[2024-04-01T10:10:20.052+0000] {subprocess.py:93} INFO -     manifest = ManifestLoader.get_full_manifest(
+[2024-04-01T10:10:20.053+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/parser/manifest.py", line 318, in get_full_manifest
+[2024-04-01T10:10:20.054+0000] {subprocess.py:93} INFO -     manifest = loader.load()
+[2024-04-01T10:10:20.055+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/parser/manifest.py", line 365, in load
+[2024-04-01T10:10:20.067+0000] {subprocess.py:93} INFO -     file_reader.read_files()
+[2024-04-01T10:10:20.069+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/parser/read_files.py", line 203, in read_files
+[2024-04-01T10:10:20.070+0000] {subprocess.py:93} INFO -     self.read_files_for_project(project, file_types)
+[2024-04-01T10:10:20.072+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/parser/read_files.py", line 210, in read_files_for_project
+[2024-04-01T10:10:20.074+0000] {subprocess.py:93} INFO -     project_files[file_type_info["parser"]] = read_files_for_parser(
+[2024-04-01T10:10:20.075+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/parser/read_files.py", line 158, in read_files_for_parser
+[2024-04-01T10:10:20.078+0000] {subprocess.py:93} INFO -     source_files = get_source_files(
+[2024-04-01T10:10:20.083+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/parser/read_files.py", line 134, in get_source_files
+[2024-04-01T10:10:20.088+0000] {subprocess.py:93} INFO -     fp_list = filesystem_search(project, paths, extension, ignore_spec)
+[2024-04-01T10:10:20.090+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/parser/search.py", line 74, in filesystem_search
+[2024-04-01T10:10:20.096+0000] {subprocess.py:93} INFO -     for result in find_matching(root, relative_dirs, ext, ignore_spec):
+[2024-04-01T10:10:20.123+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/clients/system.py", line 79, in find_matching
+[2024-04-01T10:10:20.129+0000] {subprocess.py:93} INFO -     modification_time = os.path.getmtime(absolute_path)
+[2024-04-01T10:10:20.131+0000] {subprocess.py:93} INFO -   File "/usr/local/lib/python3.8/genericpath.py", line 55, in getmtime
+[2024-04-01T10:10:20.134+0000] {subprocess.py:93} INFO -     return os.stat(filename).st_mtime
+[2024-04-01T10:10:20.138+0000] {subprocess.py:93} INFO - OSError: [Errno 5] Input/output error: '/opt/***/proj/dbt_packages/elementary/macros/utils/graph/get_nodes_by_unique_ids.sql'
+[2024-04-01T10:10:20.144+0000] {subprocess.py:93} INFO - 
+[2024-04-01T10:10:21.779+0000] {subprocess.py:97} INFO - Command exited with return code 2
+[2024-04-01T10:10:21.870+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 2.
+[2024-04-01T10:10:21.889+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=freshness___dbt, task_id=run_model1, execution_date=20240319T000000, start_date=20240401T100934, end_date=20240401T101021
+[2024-04-01T10:10:21.948+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 211 for task run_model1 (Bash command failed. The command returned a non-zero exit code 2.; 1478)
+[2024-04-01T10:10:22.005+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-04-01T10:10:22.128+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

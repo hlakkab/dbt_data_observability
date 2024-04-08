@@ -1,0 +1,70 @@
+[2024-04-01T09:47:01.709+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag___dbt.dbt_data_quality_checks scheduled__2024-03-31T00:00:00+00:00 [queued]>
+[2024-04-01T09:47:01.721+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag___dbt.dbt_data_quality_checks scheduled__2024-03-31T00:00:00+00:00 [queued]>
+[2024-04-01T09:47:01.722+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2024-04-01T09:47:01.740+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): dbt_data_quality_checks> on 2024-03-31 00:00:00+00:00
+[2024-04-01T09:47:01.747+0000] {standard_task_runner.py:60} INFO - Started process 210 to run task
+[2024-04-01T09:47:01.753+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'dag___dbt', 'dbt_data_quality_checks', 'scheduled__2024-03-31T00:00:00+00:00', '--job-id', '84', '--raw', '--subdir', 'DAGS_FOLDER/dbt_dag.py', '--cfg-path', '/tmp/tmph9_h_q_w']
+[2024-04-01T09:47:01.757+0000] {standard_task_runner.py:88} INFO - Job 84: Subtask dbt_data_quality_checks
+[2024-04-01T09:47:01.836+0000] {task_command.py:423} INFO - Running <TaskInstance: dag___dbt.dbt_data_quality_checks scheduled__2024-03-31T00:00:00+00:00 [running]> on host 62dc842f1ceb
+[2024-04-01T09:47:01.956+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag___dbt' AIRFLOW_CTX_TASK_ID='dbt_data_quality_checks' AIRFLOW_CTX_EXECUTION_DATE='2024-03-31T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-03-31T00:00:00+00:00'
+[2024-04-01T09:47:01.959+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-04-01T09:47:01.960+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', '/home/***/.local/bin/dbt test --profiles-dir /home/***/.dbt --project-dir /opt/***/proj']
+[2024-04-01T09:47:01.976+0000] {subprocess.py:86} INFO - Output:
+[2024-04-01T09:47:08.292+0000] {subprocess.py:93} INFO - [0m09:47:08  Running with dbt=1.7.10
+[2024-04-01T09:47:09.063+0000] {subprocess.py:93} INFO - [0m09:47:09  Registered adapter: postgres=1.7.10
+[2024-04-01T09:47:25.711+0000] {subprocess.py:93} INFO - [0m09:47:25  Found 34 models, 2 operations, 5 tests, 1 source, 0 exposures, 0 metrics, 1407 macros, 0 groups, 0 semantic models
+[2024-04-01T09:47:25.726+0000] {subprocess.py:93} INFO - [0m09:47:25
+[2024-04-01T09:47:26.783+0000] {subprocess.py:93} INFO - [0m09:47:26
+[2024-04-01T09:47:26.785+0000] {subprocess.py:93} INFO - [0m09:47:26  Running 1 on-run-start hook
+[2024-04-01T09:47:27.189+0000] {subprocess.py:93} INFO - [0m09:47:27  1 of 1 START hook: elementary.on-run-start.0 ................................... [RUN]
+[2024-04-01T09:47:27.197+0000] {subprocess.py:93} INFO - [0m09:47:27  1 of 1 OK hook: elementary.on-run-start.0 ...................................... [[32mOK[0m in 0.00s]
+[2024-04-01T09:47:27.201+0000] {subprocess.py:93} INFO - [0m09:47:27
+[2024-04-01T09:47:27.211+0000] {subprocess.py:93} INFO - [0m09:47:27  Concurrency: 1 threads (target='dev')
+[2024-04-01T09:47:27.217+0000] {subprocess.py:93} INFO - [0m09:47:27
+[2024-04-01T09:47:27.263+0000] {subprocess.py:93} INFO - [0m09:47:27  1 of 5 START test elementary_freshness_anomalies_raw_orders_creation_date ...... [RUN]
+[2024-04-01T09:47:28.425+0000] {subprocess.py:93} INFO - [0m09:47:28  Elementary: Started running data monitors on: POSTGRES.PUBLIC.RAW_ORDERS
+[2024-04-01T09:47:29.200+0000] {subprocess.py:93} INFO - [0m09:47:29  Elementary: Finished running data monitors on: POSTGRES.PUBLIC.RAW_ORDERS
+[2024-04-01T09:47:29.982+0000] {subprocess.py:93} INFO - [0m09:47:29  1 of 5 PASS elementary_freshness_anomalies_raw_orders_creation_date ............ [[32mPASS[0m in 2.72s]
+[2024-04-01T09:47:29.988+0000] {subprocess.py:93} INFO - [0m09:47:29  2 of 5 START test not_null_my_second_dbt_model_id .............................. [RUN]
+[2024-04-01T09:47:30.261+0000] {subprocess.py:93} INFO - [0m09:47:30  2 of 5 ERROR not_null_my_second_dbt_model_id ................................... [[31mERROR[0m in 0.27s]
+[2024-04-01T09:47:30.266+0000] {subprocess.py:93} INFO - [0m09:47:30  3 of 5 START test not_null_raw_orders_creation_date ............................ [RUN]
+[2024-04-01T09:47:30.421+0000] {subprocess.py:93} INFO - [0m09:47:30  3 of 5 PASS not_null_raw_orders_creation_date .................................. [[32mPASS[0m in 0.15s]
+[2024-04-01T09:47:30.425+0000] {subprocess.py:93} INFO - [0m09:47:30  4 of 5 START test unique_my_first_dbt_model_id ................................. [RUN]
+[2024-04-01T09:47:30.586+0000] {subprocess.py:93} INFO - [0m09:47:30  4 of 5 PASS unique_my_first_dbt_model_id ....................................... [[32mPASS[0m in 0.16s]
+[2024-04-01T09:47:30.591+0000] {subprocess.py:93} INFO - [0m09:47:30  5 of 5 START test unique_my_second_dbt_model_id ................................ [RUN]
+[2024-04-01T09:47:30.728+0000] {subprocess.py:93} INFO - [0m09:47:30  5 of 5 ERROR unique_my_second_dbt_model_id ..................................... [[31mERROR[0m in 0.14s]
+[2024-04-01T09:47:30.903+0000] {subprocess.py:93} INFO - [0m09:47:30
+[2024-04-01T09:47:30.904+0000] {subprocess.py:93} INFO - [0m09:47:30  Running 1 on-run-end hook
+[2024-04-01T09:47:33.534+0000] {subprocess.py:93} INFO - [0m09:47:33  1 of 1 START hook: elementary.on-run-end.0 ..................................... [RUN]
+[2024-04-01T09:47:33.535+0000] {subprocess.py:93} INFO - [0m09:47:33  1 of 1 OK hook: elementary.on-run-end.0 ........................................ [[32mOK[0m in 0.00s]
+[2024-04-01T09:47:33.536+0000] {subprocess.py:93} INFO - [0m09:47:33
+[2024-04-01T09:47:33.543+0000] {subprocess.py:93} INFO - [0m09:47:33
+[2024-04-01T09:47:33.545+0000] {subprocess.py:93} INFO - [0m09:47:33  Finished running 5 tests, 2 hooks in 0 hours 0 minutes and 7.81 seconds (7.81s).
+[2024-04-01T09:47:33.615+0000] {subprocess.py:93} INFO - [0m09:47:33
+[2024-04-01T09:47:33.616+0000] {subprocess.py:93} INFO - [0m09:47:33  [31mCompleted with 2 errors and 0 warnings:[0m
+[2024-04-01T09:47:33.617+0000] {subprocess.py:93} INFO - [0m09:47:33
+[2024-04-01T09:47:33.619+0000] {subprocess.py:93} INFO - [0m09:47:33    Database Error in test not_null_my_second_dbt_model_id (models/example/schema.yml)
+[2024-04-01T09:47:33.619+0000] {subprocess.py:93} INFO -   ERREUR:  la relation « public.my_second_dbt_model » n'existe pas
+[2024-04-01T09:47:33.620+0000] {subprocess.py:93} INFO -   LINE 14: from "postgres"."public"."my_second_dbt_model"
+[2024-04-01T09:47:33.620+0000] {subprocess.py:93} INFO -                 ^
+[2024-04-01T09:47:33.621+0000] {subprocess.py:93} INFO -   compiled Code at target/run/proj/models/example/schema.yml/not_null_my_second_dbt_model_id.sql
+[2024-04-01T09:47:33.621+0000] {subprocess.py:93} INFO - [0m09:47:33
+[2024-04-01T09:47:33.622+0000] {subprocess.py:93} INFO - [0m09:47:33    Database Error in test unique_my_second_dbt_model_id (models/example/schema.yml)
+[2024-04-01T09:47:33.622+0000] {subprocess.py:93} INFO -   ERREUR:  la relation « public.my_second_dbt_model » n'existe pas
+[2024-04-01T09:47:33.622+0000] {subprocess.py:93} INFO -   LINE 15: from "postgres"."public"."my_second_dbt_model"
+[2024-04-01T09:47:33.623+0000] {subprocess.py:93} INFO -                 ^
+[2024-04-01T09:47:33.623+0000] {subprocess.py:93} INFO -   compiled Code at target/run/proj/models/example/schema.yml/unique_my_second_dbt_model_id.sql
+[2024-04-01T09:47:33.624+0000] {subprocess.py:93} INFO - [0m09:47:33
+[2024-04-01T09:47:33.624+0000] {subprocess.py:93} INFO - [0m09:47:33  Done. PASS=3 WARN=0 ERROR=2 SKIP=0 TOTAL=5
+[2024-04-01T09:47:34.506+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2024-04-01T09:47:34.517+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2024-04-01T09:47:34.523+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=dag___dbt, task_id=dbt_data_quality_checks, execution_date=20240331T000000, start_date=20240401T094701, end_date=20240401T094734
+[2024-04-01T09:47:34.538+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 84 for task dbt_data_quality_checks (Bash command failed. The command returned a non-zero exit code 1.; 210)
+[2024-04-01T09:47:34.550+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-04-01T09:47:34.572+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

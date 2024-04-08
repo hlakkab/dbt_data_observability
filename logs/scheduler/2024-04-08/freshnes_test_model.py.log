@@ -1,0 +1,756 @@
+[2024-04-08T10:30:50.448+0000] {processor.py:161} INFO - Started process (PID=52) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:30:50.457+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T10:30:50.470+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:30:50.470+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:30:50.579+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:30:50.708+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:30:50.707+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T10:30:50.850+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:30:50.849+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T10:30:50.982+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.566 seconds
+[2024-04-08T10:31:23.907+0000] {processor.py:161} INFO - Started process (PID=116) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:31:23.922+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T10:31:23.943+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:31:23.942+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:31:24.278+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:31:24.411+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:31:24.406+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T10:31:24.557+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:31:24.556+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T10:31:24.689+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.805 seconds
+[2024-04-08T10:31:57.137+0000] {processor.py:161} INFO - Started process (PID=176) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:31:57.148+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T10:31:57.178+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:31:57.175+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:31:57.427+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:31:57.532+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:31:57.531+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T10:31:57.660+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:31:57.658+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T10:31:57.815+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.710 seconds
+[2024-04-08T10:32:28.082+0000] {processor.py:161} INFO - Started process (PID=233) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:32:28.086+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T10:32:28.095+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:32:28.094+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:32:28.164+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:32:28.254+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:32:28.253+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T10:32:28.396+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:32:28.396+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T10:32:28.479+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.430 seconds
+[2024-04-08T10:32:59.199+0000] {processor.py:161} INFO - Started process (PID=292) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:32:59.204+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T10:32:59.212+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:32:59.211+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:32:59.284+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:32:59.364+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:32:59.364+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T10:32:59.492+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:32:59.491+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T10:32:59.582+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.407 seconds
+[2024-04-08T10:33:29.895+0000] {processor.py:161} INFO - Started process (PID=351) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:33:29.902+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T10:33:29.912+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:33:29.911+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:33:30.066+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:33:30.282+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:33:30.281+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T10:33:30.472+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:33:30.472+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T10:33:30.626+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.745 seconds
+[2024-04-08T10:34:01.170+0000] {processor.py:161} INFO - Started process (PID=411) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:34:01.172+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T10:34:01.174+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:34:01.174+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:34:01.202+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:34:01.232+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:34:01.232+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T10:34:01.269+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:34:01.269+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T10:34:01.300+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.135 seconds
+[2024-04-08T10:34:31.489+0000] {processor.py:161} INFO - Started process (PID=471) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:34:31.491+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T10:34:31.494+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:34:31.494+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:34:31.515+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:34:31.554+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:34:31.554+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T10:34:31.590+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:34:31.589+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T10:34:31.705+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.223 seconds
+[2024-04-08T10:35:01.958+0000] {processor.py:161} INFO - Started process (PID=531) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:35:01.960+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T10:35:01.963+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:35:01.962+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:35:01.991+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:35:02.020+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:35:02.020+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T10:35:02.052+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:35:02.052+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T10:35:02.081+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.128 seconds
+[2024-04-08T10:35:32.379+0000] {processor.py:161} INFO - Started process (PID=591) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:35:32.381+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T10:35:32.385+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:35:32.385+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:35:32.422+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:35:32.464+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:35:32.463+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T10:35:32.539+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:35:32.538+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T10:35:32.591+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.218 seconds
+[2024-04-08T10:36:03.175+0000] {processor.py:161} INFO - Started process (PID=651) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:36:03.177+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T10:36:03.181+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:36:03.180+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:36:03.208+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:36:03.238+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:36:03.237+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T10:36:03.272+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:36:03.271+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T10:36:03.303+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.134 seconds
+[2024-04-08T10:36:33.623+0000] {processor.py:161} INFO - Started process (PID=712) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:36:33.625+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T10:36:33.629+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:36:33.628+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:36:33.659+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:36:33.700+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:36:33.700+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T10:36:33.740+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:36:33.740+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T10:36:33.839+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.222 seconds
+[2024-04-08T10:37:04.551+0000] {processor.py:161} INFO - Started process (PID=772) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:37:04.553+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T10:37:04.556+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:37:04.556+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:37:04.586+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:37:04.627+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:37:04.626+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T10:37:04.675+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:37:04.675+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T10:37:04.732+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.188 seconds
+[2024-04-08T10:37:35.394+0000] {processor.py:161} INFO - Started process (PID=832) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:37:35.396+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T10:37:35.400+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:37:35.399+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:37:35.430+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:37:35.480+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:37:35.479+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T10:37:35.536+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:37:35.536+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T10:37:35.605+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.219 seconds
+[2024-04-08T10:38:06.141+0000] {processor.py:161} INFO - Started process (PID=892) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:38:06.143+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T10:38:06.146+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:38:06.145+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:38:06.171+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:38:06.201+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:38:06.201+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T10:38:06.239+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:38:06.239+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T10:38:06.323+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.187 seconds
+[2024-04-08T10:38:36.795+0000] {processor.py:161} INFO - Started process (PID=952) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:38:36.799+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T10:38:36.804+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:38:36.804+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:38:36.857+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:38:36.923+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:38:36.922+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T10:38:37.003+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:38:37.002+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T10:38:37.068+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.282 seconds
+[2024-04-08T10:39:07.247+0000] {processor.py:161} INFO - Started process (PID=1013) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:39:07.249+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T10:39:07.252+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:39:07.252+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:39:07.284+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:39:07.322+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:39:07.322+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T10:39:07.368+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:39:07.367+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T10:39:07.415+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.176 seconds
+[2024-04-08T10:39:37.848+0000] {processor.py:161} INFO - Started process (PID=1074) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:39:37.850+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T10:39:37.852+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:39:37.852+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:39:37.875+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:39:37.907+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:39:37.906+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T10:39:37.940+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:39:37.940+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T10:39:37.974+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.131 seconds
+[2024-04-08T10:40:08.446+0000] {processor.py:161} INFO - Started process (PID=1134) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:40:08.448+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T10:40:08.452+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:40:08.452+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:40:08.485+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:40:08.523+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:40:08.523+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T10:40:08.567+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:40:08.567+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T10:40:08.641+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.201 seconds
+[2024-04-08T10:40:38.999+0000] {processor.py:161} INFO - Started process (PID=1194) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:40:39.001+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T10:40:39.004+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:40:39.003+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:40:39.025+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:40:39.055+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:40:39.054+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T10:40:39.093+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:40:39.093+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T10:40:39.145+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.151 seconds
+[2024-04-08T10:41:10.085+0000] {processor.py:161} INFO - Started process (PID=1254) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:41:10.086+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T10:41:10.089+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:41:10.089+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:41:10.111+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:41:10.139+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:41:10.139+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T10:41:10.177+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:41:10.176+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T10:41:10.271+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.192 seconds
+[2024-04-08T10:41:40.733+0000] {processor.py:161} INFO - Started process (PID=1314) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:41:40.735+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T10:41:40.738+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:41:40.738+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:41:40.762+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:41:40.793+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:41:40.793+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T10:41:40.834+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:41:40.833+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T10:41:40.871+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.144 seconds
+[2024-04-08T10:42:11.107+0000] {processor.py:161} INFO - Started process (PID=1374) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:42:11.109+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T10:42:11.112+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:42:11.112+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:42:11.135+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:42:11.171+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:42:11.171+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T10:42:11.216+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:42:11.216+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T10:42:11.251+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.151 seconds
+[2024-04-08T10:42:41.377+0000] {processor.py:161} INFO - Started process (PID=1435) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:42:41.379+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T10:42:41.381+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:42:41.381+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:42:41.405+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:42:41.434+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:42:41.434+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T10:42:41.466+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:42:41.466+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T10:42:41.555+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.182 seconds
+[2024-04-08T10:43:13.993+0000] {processor.py:161} INFO - Started process (PID=1495) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:43:14.074+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T10:43:14.086+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:43:14.085+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:43:14.576+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:43:14.734+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:43:14.733+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T10:43:15.005+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:43:14.995+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T10:43:15.187+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 1.214 seconds
+[2024-04-08T10:43:58.386+0000] {processor.py:161} INFO - Started process (PID=1560) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:43:58.456+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T10:43:58.475+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:43:58.473+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:43:58.862+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:43:58.988+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:43:58.988+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T10:43:59.151+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:43:59.150+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T10:43:59.437+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 1.080 seconds
+[2024-04-08T10:44:31.027+0000] {processor.py:161} INFO - Started process (PID=1619) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:44:31.041+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T10:44:31.049+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:44:31.046+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:44:31.435+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:44:31.543+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:44:31.542+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T10:44:31.711+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:44:31.710+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T10:44:32.032+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 1.037 seconds
+[2024-04-08T10:45:06.058+0000] {processor.py:161} INFO - Started process (PID=1675) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:45:06.070+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T10:45:06.150+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:45:06.149+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:45:06.743+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:45:06.943+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:45:06.942+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T10:45:07.282+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:45:07.281+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T10:45:07.910+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 1.877 seconds
+[2024-04-08T10:45:55.907+0000] {processor.py:161} INFO - Started process (PID=1738) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:45:55.953+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T10:45:55.994+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:45:55.993+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:45:56.220+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:45:56.387+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:45:56.386+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T10:45:56.587+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:45:56.586+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T10:45:56.799+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.925 seconds
+[2024-04-08T10:46:27.255+0000] {processor.py:161} INFO - Started process (PID=1798) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:46:27.263+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T10:46:27.269+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:46:27.268+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:46:27.337+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:46:27.417+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:46:27.416+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T10:46:27.522+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:46:27.521+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T10:46:27.622+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.378 seconds
+[2024-04-08T10:46:58.718+0000] {processor.py:161} INFO - Started process (PID=1858) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:46:58.733+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T10:46:58.749+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:46:58.746+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:46:58.850+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:46:58.981+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:46:58.980+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T10:46:59.117+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:46:59.115+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T10:46:59.203+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.501 seconds
+[2024-04-08T10:47:31.481+0000] {processor.py:161} INFO - Started process (PID=1919) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:47:31.492+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T10:47:31.521+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:47:31.519+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:47:32.045+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:47:32.192+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:47:32.191+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T10:47:32.417+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:47:32.416+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T10:47:32.623+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 1.169 seconds
+[2024-04-08T10:48:05.851+0000] {processor.py:161} INFO - Started process (PID=1979) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:48:05.854+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T10:48:05.862+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:48:05.861+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:48:05.917+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:48:05.999+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:48:05.997+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T10:48:06.116+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:48:06.115+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T10:48:06.201+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.359 seconds
+[2024-04-08T10:48:40.338+0000] {processor.py:161} INFO - Started process (PID=2037) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:48:40.349+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T10:48:40.360+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:48:40.359+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:48:40.450+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:48:40.567+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:48:40.566+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T10:48:40.759+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:48:40.758+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T10:48:40.902+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.580 seconds
+[2024-04-08T10:49:12.688+0000] {processor.py:161} INFO - Started process (PID=2095) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:49:12.701+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T10:49:12.720+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:49:12.718+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:49:13.043+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:49:13.183+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:49:13.182+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T10:49:13.412+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:49:13.411+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T10:49:13.654+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.987 seconds
+[2024-04-08T10:49:45.171+0000] {processor.py:161} INFO - Started process (PID=2155) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:49:45.195+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T10:49:45.212+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:49:45.211+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:49:45.563+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:49:45.664+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:49:45.663+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T10:49:45.785+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:49:45.784+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T10:49:45.957+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.852 seconds
+[2024-04-08T10:50:16.994+0000] {processor.py:161} INFO - Started process (PID=2211) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:50:17.009+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T10:50:17.025+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:50:17.024+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:50:17.160+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:50:17.360+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:50:17.359+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T10:50:17.560+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:50:17.559+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T10:50:17.745+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.771 seconds
+[2024-04-08T10:50:57.516+0000] {processor.py:161} INFO - Started process (PID=2274) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:50:57.521+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T10:50:57.528+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:50:57.526+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:50:57.580+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:50:57.699+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:50:57.698+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T10:50:57.848+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:50:57.837+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T10:50:58.041+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.540 seconds
+[2024-04-08T10:51:28.305+0000] {processor.py:161} INFO - Started process (PID=2331) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:51:28.308+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T10:51:28.316+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:51:28.315+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:51:28.372+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:51:28.461+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:51:28.460+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T10:51:28.571+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:51:28.570+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T10:51:28.729+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.436 seconds
+[2024-04-08T10:51:59.023+0000] {processor.py:161} INFO - Started process (PID=2391) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:51:59.025+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T10:51:59.028+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:51:59.028+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:51:59.063+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:51:59.115+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:51:59.114+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T10:51:59.177+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:51:59.176+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T10:51:59.236+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.221 seconds
+[2024-04-08T10:52:30.228+0000] {processor.py:161} INFO - Started process (PID=2451) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:52:30.235+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T10:52:30.251+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:52:30.249+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:52:30.350+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:52:30.446+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:52:30.445+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T10:52:30.601+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:52:30.600+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T10:52:30.777+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.570 seconds
+[2024-04-08T10:53:04.484+0000] {processor.py:161} INFO - Started process (PID=2511) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:53:04.498+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T10:53:04.560+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:53:04.554+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:53:04.909+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:53:05.241+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:53:05.240+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T10:53:05.542+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:53:05.541+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T10:53:05.944+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 1.513 seconds
+[2024-04-08T10:53:36.151+0000] {processor.py:161} INFO - Started process (PID=2571) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:53:36.153+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T10:53:36.157+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:53:36.157+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:53:36.190+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:53:36.227+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:53:36.227+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T10:53:36.261+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:53:36.261+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T10:53:36.297+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.152 seconds
+[2024-04-08T10:54:06.485+0000] {processor.py:161} INFO - Started process (PID=2631) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:54:06.487+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T10:54:06.491+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:54:06.490+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:54:06.524+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:54:06.563+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:54:06.563+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T10:54:06.610+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:54:06.610+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T10:54:06.649+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.171 seconds
+[2024-04-08T10:54:37.538+0000] {processor.py:161} INFO - Started process (PID=2691) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:54:37.540+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T10:54:37.543+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:54:37.542+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:54:37.573+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:54:37.817+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:54:37.816+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T10:54:37.881+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:54:37.879+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T10:54:37.983+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.451 seconds
+[2024-04-08T10:55:08.259+0000] {processor.py:161} INFO - Started process (PID=2751) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:55:08.261+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T10:55:08.264+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:55:08.264+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:55:08.285+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:55:08.316+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:55:08.316+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T10:55:08.560+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:55:08.559+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T10:55:08.651+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.400 seconds
+[2024-04-08T10:55:39.120+0000] {processor.py:161} INFO - Started process (PID=2811) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:55:39.123+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T10:55:39.129+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:55:39.128+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:55:39.180+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:55:39.230+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:55:39.230+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T10:55:39.268+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:55:39.268+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T10:55:39.365+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.257 seconds
+[2024-04-08T10:56:09.649+0000] {processor.py:161} INFO - Started process (PID=2871) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:56:09.651+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T10:56:09.655+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:56:09.654+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:56:09.705+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:56:09.757+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:56:09.756+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T10:56:09.822+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:56:09.822+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T10:56:09.936+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.293 seconds
+[2024-04-08T10:56:40.050+0000] {processor.py:161} INFO - Started process (PID=2931) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:56:40.053+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T10:56:40.058+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:56:40.057+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:56:40.142+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:56:40.188+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:56:40.187+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T10:56:40.235+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:56:40.235+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T10:56:40.326+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.287 seconds
+[2024-04-08T10:57:10.533+0000] {processor.py:161} INFO - Started process (PID=2991) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:57:10.535+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T10:57:10.552+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:57:10.551+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:57:10.624+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:57:10.666+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:57:10.665+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T10:57:10.721+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:57:10.720+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T10:57:10.781+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.255 seconds
+[2024-04-08T10:57:40.866+0000] {processor.py:161} INFO - Started process (PID=3051) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:57:40.868+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T10:57:40.871+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:57:40.871+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:57:40.897+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:57:40.930+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:57:40.929+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T10:57:40.978+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:57:40.977+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T10:57:41.044+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.184 seconds
+[2024-04-08T10:58:12.019+0000] {processor.py:161} INFO - Started process (PID=3110) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:58:12.021+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T10:58:12.024+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:58:12.024+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:58:12.052+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:58:12.090+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:58:12.090+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T10:58:12.142+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:58:12.141+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T10:58:12.187+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.175 seconds
+[2024-04-08T10:58:42.580+0000] {processor.py:161} INFO - Started process (PID=3170) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:58:42.582+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T10:58:42.586+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:58:42.586+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:58:42.612+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:58:42.646+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:58:42.645+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T10:58:42.686+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:58:42.686+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T10:58:42.726+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.153 seconds
+[2024-04-08T10:59:12.914+0000] {processor.py:161} INFO - Started process (PID=3230) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:59:12.916+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T10:59:12.923+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:59:12.922+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:59:12.964+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:59:13.021+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:59:13.020+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T10:59:13.094+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:59:13.094+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T10:59:13.145+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.241 seconds
+[2024-04-08T10:59:43.559+0000] {processor.py:161} INFO - Started process (PID=3290) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:59:43.561+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T10:59:43.566+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:59:43.565+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:59:43.589+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T10:59:43.622+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:59:43.622+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T10:59:43.660+0000] {logging_mixin.py:188} INFO - [2024-04-08T10:59:43.660+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T10:59:43.695+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.146 seconds
+[2024-04-08T11:00:14.318+0000] {processor.py:161} INFO - Started process (PID=3350) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:00:14.322+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T11:00:14.328+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:00:14.328+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:00:14.365+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:00:14.428+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:00:14.426+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T11:00:14.506+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:00:14.505+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T11:00:14.660+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.355 seconds
+[2024-04-08T11:00:44.814+0000] {processor.py:161} INFO - Started process (PID=3410) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:00:44.815+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T11:00:44.818+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:00:44.817+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:00:44.843+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:00:44.873+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:00:44.872+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T11:00:44.908+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:00:44.908+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T11:00:44.940+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.131 seconds
+[2024-04-08T11:01:15.739+0000] {processor.py:161} INFO - Started process (PID=3471) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:01:15.741+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T11:01:15.746+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:01:15.745+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:01:15.777+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:01:15.826+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:01:15.825+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T11:01:15.875+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:01:15.875+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T11:01:15.906+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.175 seconds
+[2024-04-08T11:01:46.720+0000] {processor.py:161} INFO - Started process (PID=3531) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:01:46.721+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T11:01:46.727+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:01:46.726+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:01:46.763+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:01:46.809+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:01:46.809+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T11:01:46.848+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:01:46.848+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T11:01:46.880+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.166 seconds
+[2024-04-08T11:02:17.255+0000] {processor.py:161} INFO - Started process (PID=3592) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:02:17.260+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T11:02:17.265+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:02:17.264+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:02:17.300+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:02:17.353+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:02:17.353+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T11:02:17.414+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:02:17.413+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T11:02:17.459+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.215 seconds
+[2024-04-08T11:02:48.021+0000] {processor.py:161} INFO - Started process (PID=3652) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:02:48.024+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T11:02:48.031+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:02:48.030+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:02:48.083+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:02:48.146+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:02:48.146+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T11:02:48.208+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:02:48.207+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T11:02:48.343+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.332 seconds
+[2024-04-08T11:03:19.241+0000] {processor.py:161} INFO - Started process (PID=3713) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:03:19.243+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T11:03:19.247+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:03:19.246+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:03:19.273+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:03:19.312+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:03:19.311+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T11:03:19.351+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:03:19.350+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T11:03:19.380+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.144 seconds
+[2024-04-08T11:03:49.572+0000] {processor.py:161} INFO - Started process (PID=3773) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:03:49.573+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T11:03:49.576+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:03:49.576+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:03:49.604+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:03:49.637+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:03:49.637+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T11:03:49.675+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:03:49.675+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T11:03:49.766+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.200 seconds
+[2024-04-08T11:04:20.239+0000] {processor.py:161} INFO - Started process (PID=3833) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:04:20.244+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T11:04:20.255+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:04:20.253+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:04:20.308+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:04:20.382+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:04:20.381+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T11:04:20.455+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:04:20.454+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T11:04:20.518+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.300 seconds
+[2024-04-08T11:04:50.705+0000] {processor.py:161} INFO - Started process (PID=3893) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:04:50.708+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T11:04:50.717+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:04:50.716+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:04:50.756+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:04:50.809+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:04:50.809+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T11:04:50.852+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:04:50.852+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T11:04:50.948+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.261 seconds
+[2024-04-08T11:05:21.138+0000] {processor.py:161} INFO - Started process (PID=3953) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:05:21.140+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T11:05:21.144+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:05:21.144+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:05:21.171+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:05:21.203+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:05:21.203+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T11:05:21.241+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:05:21.240+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T11:05:21.322+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.191 seconds
+[2024-04-08T11:05:51.700+0000] {processor.py:161} INFO - Started process (PID=4013) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:05:51.702+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T11:05:51.705+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:05:51.705+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:05:51.734+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:05:51.768+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:05:51.768+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T11:05:51.817+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:05:51.816+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T11:05:51.849+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.157 seconds
+[2024-04-08T11:06:22.056+0000] {processor.py:161} INFO - Started process (PID=4073) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:06:22.058+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T11:06:22.064+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:06:22.063+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:06:22.103+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:06:22.161+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:06:22.160+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T11:06:22.228+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:06:22.227+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T11:06:22.276+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.229 seconds
+[2024-04-08T11:06:52.940+0000] {processor.py:161} INFO - Started process (PID=4133) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:06:52.942+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T11:06:52.945+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:06:52.944+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:06:52.970+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:06:53.000+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:06:53.000+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T11:06:53.036+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:06:53.036+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T11:06:53.122+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.188 seconds
+[2024-04-08T11:07:23.319+0000] {processor.py:161} INFO - Started process (PID=4193) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:07:23.324+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T11:07:23.333+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:07:23.331+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:07:23.372+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:07:23.406+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:07:23.406+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T11:07:23.445+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:07:23.444+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T11:07:23.597+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.292 seconds
+[2024-04-08T11:07:54.569+0000] {processor.py:161} INFO - Started process (PID=4253) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:07:54.571+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T11:07:54.574+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:07:54.574+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:07:54.602+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:07:54.637+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:07:54.637+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T11:07:54.684+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:07:54.684+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T11:07:54.717+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.153 seconds
+[2024-04-08T11:08:25.129+0000] {processor.py:161} INFO - Started process (PID=4315) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:08:25.132+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T11:08:25.136+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:08:25.135+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:08:25.159+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:08:25.193+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:08:25.193+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T11:08:25.236+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:08:25.236+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T11:08:25.366+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.242 seconds
+[2024-04-08T11:08:55.815+0000] {processor.py:161} INFO - Started process (PID=4375) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:08:55.817+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T11:08:55.821+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:08:55.820+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:08:55.842+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:08:55.876+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:08:55.875+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T11:08:55.914+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:08:55.913+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T11:08:55.955+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.146 seconds
+[2024-04-08T11:09:26.251+0000] {processor.py:161} INFO - Started process (PID=4435) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:09:26.263+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T11:09:26.269+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:09:26.268+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:09:26.313+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:09:26.361+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:09:26.360+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T11:09:26.413+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:09:26.412+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T11:09:26.452+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.213 seconds
+[2024-04-08T11:09:56.655+0000] {processor.py:161} INFO - Started process (PID=4502) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:09:56.657+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T11:09:56.660+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:09:56.660+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:09:56.687+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:09:56.720+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:09:56.720+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T11:09:56.761+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:09:56.761+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T11:09:56.892+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.245 seconds
+[2024-04-08T11:10:27.145+0000] {processor.py:161} INFO - Started process (PID=4562) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:10:27.147+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T11:10:27.152+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:10:27.151+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:10:27.182+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:10:27.230+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:10:27.229+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T11:10:27.279+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:10:27.278+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T11:10:27.315+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.176 seconds
+[2024-04-08T11:10:57.592+0000] {processor.py:161} INFO - Started process (PID=4622) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:10:57.595+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T11:10:57.602+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:10:57.601+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:10:57.650+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:10:57.693+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:10:57.693+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T11:10:57.739+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:10:57.739+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T11:10:57.776+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.196 seconds
+[2024-04-08T11:11:28.265+0000] {processor.py:161} INFO - Started process (PID=4682) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:11:28.267+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T11:11:28.272+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:11:28.271+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:11:28.304+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:11:28.336+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:11:28.336+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T11:11:28.376+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:11:28.375+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T11:11:28.406+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.150 seconds
+[2024-04-08T11:11:58.971+0000] {processor.py:161} INFO - Started process (PID=4742) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:11:58.974+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T11:11:58.983+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:11:58.982+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:11:59.015+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:11:59.057+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:11:59.056+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T11:11:59.110+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:11:59.110+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T11:11:59.153+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.193 seconds
+[2024-04-08T11:12:29.690+0000] {processor.py:161} INFO - Started process (PID=4802) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:12:29.692+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T11:12:29.696+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:12:29.696+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:12:29.724+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:12:29.755+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:12:29.755+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T11:12:29.794+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:12:29.793+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T11:12:29.877+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.194 seconds
+[2024-04-08T11:13:00.185+0000] {processor.py:161} INFO - Started process (PID=4862) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:13:00.187+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T11:13:00.190+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:13:00.190+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:13:00.215+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:13:00.249+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:13:00.249+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T11:13:00.293+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:13:00.292+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T11:13:00.326+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.147 seconds
+[2024-04-08T11:13:31.134+0000] {processor.py:161} INFO - Started process (PID=4922) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:13:31.136+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T11:13:31.140+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:13:31.140+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:13:31.167+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:13:31.212+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:13:31.211+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T11:13:31.258+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:13:31.257+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T11:13:31.298+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.173 seconds
+[2024-04-08T11:14:01.620+0000] {processor.py:161} INFO - Started process (PID=4982) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:14:01.622+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T11:14:01.625+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:14:01.625+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:14:01.654+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:14:01.700+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:14:01.699+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T11:14:01.746+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:14:01.745+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T11:14:01.830+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.218 seconds
+[2024-04-08T11:14:32.060+0000] {processor.py:161} INFO - Started process (PID=5042) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:14:32.062+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T11:14:32.066+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:14:32.066+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:14:32.096+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:14:32.138+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:14:32.138+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T11:14:32.198+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:14:32.197+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T11:14:32.305+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.251 seconds
+[2024-04-08T11:15:02.586+0000] {processor.py:161} INFO - Started process (PID=5102) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:15:02.588+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T11:15:02.592+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:15:02.591+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:15:02.614+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:15:02.649+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:15:02.648+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T11:15:02.735+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:15:02.734+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T11:15:02.782+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.201 seconds
+[2024-04-08T11:15:32.933+0000] {processor.py:161} INFO - Started process (PID=5161) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:15:32.935+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T11:15:32.938+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:15:32.938+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:15:32.965+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:15:33.002+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:15:33.002+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T11:15:33.048+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:15:33.048+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T11:15:33.083+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.159 seconds
+[2024-04-08T11:16:03.634+0000] {processor.py:161} INFO - Started process (PID=5221) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:16:03.640+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T11:16:03.650+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:16:03.648+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:16:03.707+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:16:03.783+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:16:03.783+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T11:16:03.857+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:16:03.856+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T11:16:03.943+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.324 seconds
+[2024-04-08T11:16:34.317+0000] {processor.py:161} INFO - Started process (PID=5281) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:16:34.320+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T11:16:34.324+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:16:34.324+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:16:34.355+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:16:34.409+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:16:34.409+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T11:16:34.459+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:16:34.458+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T11:16:34.506+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.196 seconds
+[2024-04-08T11:17:04.895+0000] {processor.py:161} INFO - Started process (PID=5341) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:17:04.897+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T11:17:04.901+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:17:04.900+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:17:04.946+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:17:05.007+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:17:05.007+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T11:17:05.057+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:17:05.057+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T11:17:05.153+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.266 seconds
+[2024-04-08T11:17:36.001+0000] {processor.py:161} INFO - Started process (PID=5400) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:17:36.004+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T11:17:36.009+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:17:36.009+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:17:36.049+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:17:36.106+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:17:36.105+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T11:17:36.156+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:17:36.155+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T11:17:36.187+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.195 seconds
+[2024-04-08T11:18:07.157+0000] {processor.py:161} INFO - Started process (PID=5460) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:18:07.161+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T11:18:07.169+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:18:07.168+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:18:07.220+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:18:07.264+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:18:07.264+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T11:18:07.319+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:18:07.318+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T11:18:07.414+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.273 seconds
+[2024-04-08T11:18:37.601+0000] {processor.py:161} INFO - Started process (PID=5520) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:18:37.604+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T11:18:37.610+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:18:37.609+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:18:37.652+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:18:37.715+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:18:37.714+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T11:18:37.775+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:18:37.775+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T11:18:37.866+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.274 seconds
+[2024-04-08T11:19:08.610+0000] {processor.py:161} INFO - Started process (PID=5580) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:19:08.613+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T11:19:08.617+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:19:08.616+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:19:08.641+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:19:08.699+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:19:08.698+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T11:19:08.756+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:19:08.755+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T11:19:08.845+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.241 seconds
+[2024-04-08T11:19:39.160+0000] {processor.py:161} INFO - Started process (PID=5640) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:19:39.162+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T11:19:39.166+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:19:39.165+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:19:39.199+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:19:39.249+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:19:39.249+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T11:19:39.310+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:19:39.310+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T11:19:39.348+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.197 seconds
+[2024-04-08T11:20:09.490+0000] {processor.py:161} INFO - Started process (PID=5700) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:20:09.493+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T11:20:09.497+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:20:09.496+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:20:09.528+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:20:09.570+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:20:09.569+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T11:20:09.617+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:20:09.616+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T11:20:09.651+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.168 seconds
+[2024-04-08T11:20:40.342+0000] {processor.py:161} INFO - Started process (PID=5761) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:20:40.344+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T11:20:40.351+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:20:40.349+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:20:40.396+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:20:40.443+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:20:40.443+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T11:20:40.485+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:20:40.484+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T11:20:40.539+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.206 seconds
+[2024-04-08T11:21:10.761+0000] {processor.py:161} INFO - Started process (PID=5821) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:21:10.763+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T11:21:10.767+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:21:10.767+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:21:10.814+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:21:10.862+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:21:10.862+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T11:21:10.915+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:21:10.914+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T11:21:10.958+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.207 seconds
+[2024-04-08T11:21:41.541+0000] {processor.py:161} INFO - Started process (PID=5881) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:21:41.543+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T11:21:41.547+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:21:41.546+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:21:41.573+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:21:41.603+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:21:41.603+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T11:21:41.643+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:21:41.642+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T11:21:41.684+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.149 seconds
+[2024-04-08T11:22:11.968+0000] {processor.py:161} INFO - Started process (PID=5941) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:22:11.970+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T11:22:11.973+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:22:11.973+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:22:11.998+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:22:12.037+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:22:12.036+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T11:22:12.091+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:22:12.090+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T11:22:12.127+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.167 seconds
+[2024-04-08T11:22:42.379+0000] {processor.py:161} INFO - Started process (PID=6001) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:22:42.382+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T11:22:42.386+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:22:42.386+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:22:42.414+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:22:42.451+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:22:42.450+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T11:22:42.504+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:22:42.504+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T11:22:42.549+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.178 seconds
+[2024-04-08T11:23:13.112+0000] {processor.py:161} INFO - Started process (PID=6061) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:23:13.114+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T11:23:13.120+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:23:13.119+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:23:13.150+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:23:13.210+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:23:13.210+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T11:23:13.265+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:23:13.265+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T11:23:13.347+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.243 seconds
+[2024-04-08T11:23:43.687+0000] {processor.py:161} INFO - Started process (PID=6121) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:23:43.689+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T11:23:43.692+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:23:43.691+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:23:43.713+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:23:43.745+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:23:43.744+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T11:23:43.781+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:23:43.781+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T11:23:43.812+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.131 seconds
+[2024-04-08T11:47:06.595+0000] {processor.py:161} INFO - Started process (PID=6164) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:47:06.597+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T11:47:06.600+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:47:06.599+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:47:06.651+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:47:06.789+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:47:06.788+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T11:47:06.920+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:47:06.920+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T11:47:06.986+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.424 seconds
+[2024-04-08T11:47:37.315+0000] {processor.py:161} INFO - Started process (PID=6225) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:47:37.318+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T11:47:37.321+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:47:37.320+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:47:37.356+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:47:37.386+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:47:37.386+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T11:47:37.418+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:47:37.418+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T11:47:37.508+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.202 seconds
+[2024-04-08T11:48:08.321+0000] {processor.py:161} INFO - Started process (PID=6285) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:48:08.325+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T11:48:08.329+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:48:08.328+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:48:08.387+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:48:08.465+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:48:08.464+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T11:48:08.508+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:48:08.507+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T11:48:08.585+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.282 seconds
+[2024-04-08T11:48:38.820+0000] {processor.py:161} INFO - Started process (PID=6346) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:48:38.822+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T11:48:38.824+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:48:38.824+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:48:38.853+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:48:38.886+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:48:38.886+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T11:48:38.921+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:48:38.921+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T11:48:38.950+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.137 seconds
+[2024-04-08T11:49:09.140+0000] {processor.py:161} INFO - Started process (PID=6406) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:49:09.142+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T11:49:09.145+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:49:09.144+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:49:09.182+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:49:09.223+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:49:09.222+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T11:49:09.480+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:49:09.479+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T11:49:09.545+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.414 seconds
+[2024-04-08T11:49:39.774+0000] {processor.py:161} INFO - Started process (PID=6466) to work on /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:49:39.779+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshnes_test_model.py for tasks to queue
+[2024-04-08T11:49:39.785+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:49:39.784+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:49:39.818+0000] {processor.py:840} INFO - DAG(s) 'dag___freshnes_test' retrieved from /opt/airflow/dags/freshnes_test_model.py
+[2024-04-08T11:49:39.870+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:49:39.870+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-08T11:49:39.922+0000] {logging_mixin.py:188} INFO - [2024-04-08T11:49:39.921+0000] {dag.py:3823} INFO - Setting next_dagrun for dag___freshnes_test to 2024-04-02 00:00:00+00:00, run_after=2024-04-03 00:00:00+00:00
+[2024-04-08T11:49:40.005+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshnes_test_model.py took 0.242 seconds

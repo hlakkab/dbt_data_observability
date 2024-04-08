@@ -1,0 +1,25 @@
+[2024-04-01T11:38:53.191+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag___fresh___freshnes_test.dbt_data_quality_checks scheduled__0001-04-02T13:00:00+00:00 [queued]>
+[2024-04-01T11:38:53.228+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag___fresh___freshnes_test.dbt_data_quality_checks scheduled__0001-04-02T13:00:00+00:00 [queued]>
+[2024-04-01T11:38:53.239+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2024-04-01T11:38:53.375+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): dbt_data_quality_checks> on 0001-04-02 13:00:00+00:00
+[2024-04-01T11:38:53.430+0000] {standard_task_runner.py:60} INFO - Started process 1952 to run task
+[2024-04-01T11:38:53.464+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'dag___fresh___freshnes_test', 'dbt_data_quality_checks', 'scheduled__0001-04-02T13:00:00+00:00', '--job-id', '308', '--raw', '--subdir', 'DAGS_FOLDER/freshnes_test_model.py', '--cfg-path', '/tmp/tmpwc0jkn34']
+[2024-04-01T11:38:53.490+0000] {standard_task_runner.py:88} INFO - Job 308: Subtask dbt_data_quality_checks
+[2024-04-01T11:38:53.814+0000] {task_command.py:423} INFO - Running <TaskInstance: dag___fresh___freshnes_test.dbt_data_quality_checks scheduled__0001-04-02T13:00:00+00:00 [running]> on host 62dc842f1ceb
+[2024-04-01T11:38:54.482+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag___fresh___freshnes_test' AIRFLOW_CTX_TASK_ID='dbt_data_quality_checks' AIRFLOW_CTX_EXECUTION_DATE='0001-04-02T13:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__0001-04-02T13:00:00+00:00'
+[2024-04-01T11:38:54.492+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-04-01T11:38:54.502+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', '/home/***/.local/bin/dbt source freshness --select "source:public.freshnes_test" --profiles-dir /home/***/.dbt --project-dir /opt/***/proj']
+[2024-04-01T11:38:54.596+0000] {subprocess.py:86} INFO - Output:
+[2024-04-01T11:39:16.662+0000] {subprocess.py:93} INFO - [0m11:39:16  Running with dbt=1.7.10
+[2024-04-01T11:39:20.492+0000] {subprocess.py:93} INFO - [0m11:39:20  Registered adapter: postgres=1.7.10
+[2024-04-01T11:39:48.185+0000] {subprocess.py:93} INFO - [0m11:39:48  Found 34 models, 2 operations, 5 tests, 1 source, 0 exposures, 0 metrics, 1407 macros, 0 groups, 0 semantic models
+[2024-04-01T11:39:48.207+0000] {subprocess.py:93} INFO - [0m11:39:48
+[2024-04-01T11:39:50.298+0000] {subprocess.py:93} INFO - [0m11:39:50  Concurrency: 1 threads (target='dev')
+[2024-04-01T11:39:50.305+0000] {subprocess.py:93} INFO - [0m11:39:50
+[2024-04-01T11:39:50.398+0000] {subprocess.py:93} INFO - [0m11:39:50  1 of 1 START freshness of public.freshnes_test ................................. [RUN]
+[2024-04-01T11:39:50.826+0000] {subprocess.py:93} INFO - [0m11:39:50  1 of 1 PASS freshness of public.freshnes_test .................................. [[32mPASS[0m in 0.41s]
+[2024-04-01T11:39:51.282+0000] {subprocess.py:93} INFO - [0m11:39:51  Done.
+[2024-04-01T11:39:53.456+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-04-01T11:39:53.705+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=dag___fresh___freshnes_test, task_id=dbt_data_quality_checks, execution_date=10402T130000, start_date=20240401T113853, end_date=20240401T113953
+[2024-04-01T11:39:53.873+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-04-01T11:39:53.981+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,50 @@
+[2024-04-01T10:30:54.628+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag___dbt.dbt_data_quality_checks manual__2024-04-01T10:30:23.429686+00:00 [queued]>
+[2024-04-01T10:30:54.640+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag___dbt.dbt_data_quality_checks manual__2024-04-01T10:30:23.429686+00:00 [queued]>
+[2024-04-01T10:30:54.641+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2024-04-01T10:30:54.659+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): dbt_data_quality_checks> on 2024-04-01 10:30:23.429686+00:00
+[2024-04-01T10:30:54.666+0000] {standard_task_runner.py:60} INFO - Started process 256 to run task
+[2024-04-01T10:30:54.671+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'dag___dbt', 'dbt_data_quality_checks', 'manual__2024-04-01T10:30:23.429686+00:00', '--job-id', '237', '--raw', '--subdir', 'DAGS_FOLDER/dbt_dag.py', '--cfg-path', '/tmp/tmpb2odllnm']
+[2024-04-01T10:30:54.675+0000] {standard_task_runner.py:88} INFO - Job 237: Subtask dbt_data_quality_checks
+[2024-04-01T10:30:54.735+0000] {task_command.py:423} INFO - Running <TaskInstance: dag___dbt.dbt_data_quality_checks manual__2024-04-01T10:30:23.429686+00:00 [running]> on host 62dc842f1ceb
+[2024-04-01T10:30:54.841+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag___dbt' AIRFLOW_CTX_TASK_ID='dbt_data_quality_checks' AIRFLOW_CTX_EXECUTION_DATE='2024-04-01T10:30:23.429686+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-04-01T10:30:23.429686+00:00'
+[2024-04-01T10:30:54.844+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-04-01T10:30:54.845+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', '/home/***/.local/bin/dbt test --profiles-dir /home/***/.dbt --project-dir /opt/***/proj']
+[2024-04-01T10:30:54.859+0000] {subprocess.py:86} INFO - Output:
+[2024-04-01T10:31:01.177+0000] {subprocess.py:93} INFO - [0m10:31:01  Running with dbt=1.7.10
+[2024-04-01T10:31:02.082+0000] {subprocess.py:93} INFO - [0m10:31:02  Registered adapter: postgres=1.7.10
+[2024-04-01T10:31:14.716+0000] {subprocess.py:93} INFO - [0m10:31:14  Found 34 models, 2 operations, 5 tests, 1 source, 0 exposures, 0 metrics, 1407 macros, 0 groups, 0 semantic models
+[2024-04-01T10:31:14.724+0000] {subprocess.py:93} INFO - [0m10:31:14
+[2024-04-01T10:31:15.316+0000] {subprocess.py:93} INFO - [0m10:31:15
+[2024-04-01T10:31:15.317+0000] {subprocess.py:93} INFO - [0m10:31:15  Running 1 on-run-start hook
+[2024-04-01T10:31:15.485+0000] {subprocess.py:93} INFO - [0m10:31:15  1 of 1 START hook: elementary.on-run-start.0 ................................... [RUN]
+[2024-04-01T10:31:15.487+0000] {subprocess.py:93} INFO - [0m10:31:15  1 of 1 OK hook: elementary.on-run-start.0 ...................................... [[32mOK[0m in 0.00s]
+[2024-04-01T10:31:15.488+0000] {subprocess.py:93} INFO - [0m10:31:15
+[2024-04-01T10:31:15.493+0000] {subprocess.py:93} INFO - [0m10:31:15  Concurrency: 1 threads (target='dev')
+[2024-04-01T10:31:15.495+0000] {subprocess.py:93} INFO - [0m10:31:15
+[2024-04-01T10:31:15.513+0000] {subprocess.py:93} INFO - [0m10:31:15  1 of 5 START test elementary_freshness_anomalies_raw_orders_creation_date ...... [RUN]
+[2024-04-01T10:31:16.341+0000] {subprocess.py:93} INFO - [0m10:31:16  Elementary: Started running data monitors on: POSTGRES.PUBLIC.RAW_ORDERS
+[2024-04-01T10:31:17.047+0000] {subprocess.py:93} INFO - [0m10:31:17  Elementary: Finished running data monitors on: POSTGRES.PUBLIC.RAW_ORDERS
+[2024-04-01T10:31:17.971+0000] {subprocess.py:93} INFO - [0m10:31:17  1 of 5 PASS elementary_freshness_anomalies_raw_orders_creation_date ............ [[32mPASS[0m in 2.45s]
+[2024-04-01T10:31:17.979+0000] {subprocess.py:93} INFO - [0m10:31:17  2 of 5 START test not_null_my_second_dbt_model_id .............................. [RUN]
+[2024-04-01T10:31:18.458+0000] {subprocess.py:93} INFO - [0m10:31:18  2 of 5 PASS not_null_my_second_dbt_model_id .................................... [[32mPASS[0m in 0.48s]
+[2024-04-01T10:31:18.477+0000] {subprocess.py:93} INFO - [0m10:31:18  3 of 5 START test not_null_raw_orders_creation_date ............................ [RUN]
+[2024-04-01T10:31:18.765+0000] {subprocess.py:93} INFO - [0m10:31:18  3 of 5 PASS not_null_raw_orders_creation_date .................................. [[32mPASS[0m in 0.29s]
+[2024-04-01T10:31:18.772+0000] {subprocess.py:93} INFO - [0m10:31:18  4 of 5 START test unique_my_first_dbt_model_id ................................. [RUN]
+[2024-04-01T10:31:18.974+0000] {subprocess.py:93} INFO - [0m10:31:18  4 of 5 PASS unique_my_first_dbt_model_id ....................................... [[32mPASS[0m in 0.20s]
+[2024-04-01T10:31:18.980+0000] {subprocess.py:93} INFO - [0m10:31:18  5 of 5 START test unique_my_second_dbt_model_id ................................ [RUN]
+[2024-04-01T10:31:19.164+0000] {subprocess.py:93} INFO - [0m10:31:19  5 of 5 PASS unique_my_second_dbt_model_id ...................................... [[32mPASS[0m in 0.18s]
+[2024-04-01T10:31:19.244+0000] {subprocess.py:93} INFO - [0m10:31:19
+[2024-04-01T10:31:19.246+0000] {subprocess.py:93} INFO - [0m10:31:19  Running 1 on-run-end hook
+[2024-04-01T10:31:23.026+0000] {subprocess.py:93} INFO - [0m10:31:23  1 of 1 START hook: elementary.on-run-end.0 ..................................... [RUN]
+[2024-04-01T10:31:23.028+0000] {subprocess.py:93} INFO - [0m10:31:23  1 of 1 OK hook: elementary.on-run-end.0 ........................................ [[32mOK[0m in 0.00s]
+[2024-04-01T10:31:23.029+0000] {subprocess.py:93} INFO - [0m10:31:23
+[2024-04-01T10:31:23.039+0000] {subprocess.py:93} INFO - [0m10:31:23
+[2024-04-01T10:31:23.042+0000] {subprocess.py:93} INFO - [0m10:31:23  Finished running 5 tests, 2 hooks in 0 hours 0 minutes and 8.31 seconds (8.31s).
+[2024-04-01T10:31:23.134+0000] {subprocess.py:93} INFO - [0m10:31:23
+[2024-04-01T10:31:23.137+0000] {subprocess.py:93} INFO - [0m10:31:23  [32mCompleted successfully[0m
+[2024-04-01T10:31:23.139+0000] {subprocess.py:93} INFO - [0m10:31:23
+[2024-04-01T10:31:23.142+0000] {subprocess.py:93} INFO - [0m10:31:23  Done. PASS=5 WARN=0 ERROR=0 SKIP=0 TOTAL=5
+[2024-04-01T10:31:24.073+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-04-01T10:31:24.107+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=dag___dbt, task_id=dbt_data_quality_checks, execution_date=20240401T103023, start_date=20240401T103054, end_date=20240401T103124
+[2024-04-01T10:31:24.148+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-04-01T10:31:24.223+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check

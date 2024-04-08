@@ -1,0 +1,25 @@
+[2024-03-25T12:30:03.582+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag___dbt.elementary_reports_generation manual__2024-03-25T12:17:02.080631+00:00 [queued]>
+[2024-03-25T12:30:03.603+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag___dbt.elementary_reports_generation manual__2024-03-25T12:17:02.080631+00:00 [queued]>
+[2024-03-25T12:30:03.604+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2024-03-25T12:30:03.637+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): elementary_reports_generation> on 2024-03-25 12:17:02.080631+00:00
+[2024-03-25T12:30:03.646+0000] {standard_task_runner.py:60} INFO - Started process 843 to run task
+[2024-03-25T12:30:03.654+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'dag___dbt', 'elementary_reports_generation', 'manual__2024-03-25T12:17:02.080631+00:00', '--job-id', '46', '--raw', '--subdir', 'DAGS_FOLDER/dbt_dag.py', '--cfg-path', '/tmp/tmp77ow_nw2']
+[2024-03-25T12:30:03.660+0000] {standard_task_runner.py:88} INFO - Job 46: Subtask elementary_reports_generation
+[2024-03-25T12:30:03.758+0000] {task_command.py:423} INFO - Running <TaskInstance: dag___dbt.elementary_reports_generation manual__2024-03-25T12:17:02.080631+00:00 [running]> on host 62dc842f1ceb
+[2024-03-25T12:30:03.901+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag___dbt' AIRFLOW_CTX_TASK_ID='elementary_reports_generation' AIRFLOW_CTX_EXECUTION_DATE='2024-03-25T12:17:02.080631+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-25T12:17:02.080631+00:00'
+[2024-03-25T12:30:03.907+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-03-25T12:30:03.908+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', '/home/***/.local/bin/edr report']
+[2024-03-25T12:30:03.935+0000] {subprocess.py:86} INFO - Output:
+[2024-03-25T12:30:03.940+0000] {subprocess.py:93} INFO - /usr/bin/bash: line 1: /home/***/.local/bin/edr: No such file or directory
+[2024-03-25T12:30:03.942+0000] {subprocess.py:97} INFO - Command exited with return code 127
+[2024-03-25T12:30:03.963+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 127.
+[2024-03-25T12:30:03.972+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=dag___dbt, task_id=elementary_reports_generation, execution_date=20240325T121702, start_date=20240325T123003, end_date=20240325T123003
+[2024-03-25T12:30:03.995+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 46 for task elementary_reports_generation (Bash command failed. The command returned a non-zero exit code 127.; 843)
+[2024-03-25T12:30:04.027+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-03-25T12:30:04.060+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

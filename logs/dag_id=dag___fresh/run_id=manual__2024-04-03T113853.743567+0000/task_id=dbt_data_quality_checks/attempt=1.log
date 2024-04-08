@@ -1,0 +1,46 @@
+[2024-04-03T11:38:55.840+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag___fresh.dbt_data_quality_checks manual__2024-04-03T11:38:53.743567+00:00 [queued]>
+[2024-04-03T11:38:55.851+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag___fresh.dbt_data_quality_checks manual__2024-04-03T11:38:53.743567+00:00 [queued]>
+[2024-04-03T11:38:55.852+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2024-04-03T11:38:55.871+0000] {taskinstance.py:2191} INFO - Executing <Task(CustomBashOperator): dbt_data_quality_checks> on 2024-04-03 11:38:53.743567+00:00
+[2024-04-03T11:38:55.879+0000] {standard_task_runner.py:60} INFO - Started process 2782 to run task
+[2024-04-03T11:38:55.882+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'dag___fresh', 'dbt_data_quality_checks', 'manual__2024-04-03T11:38:53.743567+00:00', '--job-id', '365', '--raw', '--subdir', 'DAGS_FOLDER/dbt_dag.py', '--cfg-path', '/tmp/tmpbh2zmhfy']
+[2024-04-03T11:38:55.886+0000] {standard_task_runner.py:88} INFO - Job 365: Subtask dbt_data_quality_checks
+[2024-04-03T11:38:55.963+0000] {task_command.py:423} INFO - Running <TaskInstance: dag___fresh.dbt_data_quality_checks manual__2024-04-03T11:38:53.743567+00:00 [running]> on host 62dc842f1ceb
+[2024-04-03T11:38:56.073+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag___fresh' AIRFLOW_CTX_TASK_ID='dbt_data_quality_checks' AIRFLOW_CTX_EXECUTION_DATE='2024-04-03T11:38:53.743567+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-04-03T11:38:53.743567+00:00'
+[2024-04-03T11:39:24.063+0000] {logging_mixin.py:188} INFO - 11:39:00  Running with dbt=1.7.10
+11:39:01  Registered adapter: postgres=1.7.10
+11:39:13  Found 34 models, 2 operations, 5 tests, 1 source, 0 exposures, 0 metrics, 1407 macros, 0 groups, 0 semantic models
+11:39:13  
+11:39:14  
+11:39:14  Running 1 on-run-start hook
+11:39:14  1 of 1 START hook: elementary.on-run-start.0 ................................... [RUN]
+11:39:14  1 of 1 OK hook: elementary.on-run-start.0 ...................................... [OK in 0.00s]
+11:39:14  
+11:39:14  Concurrency: 1 threads (target='dev')
+11:39:14  
+11:39:14  1 of 5 START test elementary_freshness_anomalies_raw_orders_creation_date ...... [RUN]
+11:39:15  Elementary: Started running data monitors on: POSTGRES.PUBLIC.RAW_ORDERS
+11:39:16  Elementary: Finished running data monitors on: POSTGRES.PUBLIC.RAW_ORDERS
+11:39:17  1 of 5 PASS elementary_freshness_anomalies_raw_orders_creation_date ............ [PASS in 2.80s]
+11:39:17  2 of 5 START test not_null_my_second_dbt_model_id .............................. [RUN]
+11:39:17  2 of 5 PASS not_null_my_second_dbt_model_id .................................... [PASS in 0.20s]
+11:39:17  3 of 5 START test not_null_raw_orders_creation_date ............................ [RUN]
+11:39:17  3 of 5 PASS not_null_raw_orders_creation_date .................................. [PASS in 0.19s]
+11:39:17  4 of 5 START test unique_my_first_dbt_model_id ................................. [RUN]
+11:39:18  4 of 5 PASS unique_my_first_dbt_model_id ....................................... [PASS in 0.18s]
+11:39:18  5 of 5 START test unique_my_second_dbt_model_id ................................ [RUN]
+11:39:18  5 of 5 PASS unique_my_second_dbt_model_id ...................................... [PASS in 0.19s]
+11:39:18  
+11:39:18  Running 1 on-run-end hook
+11:39:22  1 of 1 START hook: elementary.on-run-end.0 ..................................... [RUN]
+11:39:22  1 of 1 OK hook: elementary.on-run-end.0 ........................................ [OK in 0.00s]
+11:39:22  
+11:39:22  
+11:39:22  Finished running 5 tests, 2 hooks in 0 hours 0 minutes and 8.99 seconds (8.99s).
+11:39:23  
+11:39:23  Completed successfully
+11:39:23  
+11:39:23  Done. PASS=5 WARN=0 ERROR=0 SKIP=0 TOTAL=5
+[2024-04-03T11:39:24.100+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=dag___fresh, task_id=dbt_data_quality_checks, execution_date=20240403T113853, start_date=20240403T113855, end_date=20240403T113924
+[2024-04-03T11:39:24.136+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-04-03T11:39:24.162+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check

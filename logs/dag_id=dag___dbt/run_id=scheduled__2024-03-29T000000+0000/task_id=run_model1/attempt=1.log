@@ -1,0 +1,162 @@
+[2024-04-01T09:43:29.768+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag___dbt.run_model1 scheduled__2024-03-29T00:00:00+00:00 [queued]>
+[2024-04-01T09:43:29.788+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag___dbt.run_model1 scheduled__2024-03-29T00:00:00+00:00 [queued]>
+[2024-04-01T09:43:29.791+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2024-04-01T09:43:29.843+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): run_model1> on 2024-03-29 00:00:00+00:00
+[2024-04-01T09:43:29.853+0000] {standard_task_runner.py:60} INFO - Started process 69 to run task
+[2024-04-01T09:43:29.863+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'dag___dbt', 'run_model1', 'scheduled__2024-03-29T00:00:00+00:00', '--job-id', '75', '--raw', '--subdir', 'DAGS_FOLDER/dbt_dag.py', '--cfg-path', '/tmp/tmpi71fovem']
+[2024-04-01T09:43:29.868+0000] {standard_task_runner.py:88} INFO - Job 75: Subtask run_model1
+[2024-04-01T09:43:29.996+0000] {task_command.py:423} INFO - Running <TaskInstance: dag___dbt.run_model1 scheduled__2024-03-29T00:00:00+00:00 [running]> on host 62dc842f1ceb
+[2024-04-01T09:43:30.168+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag___dbt' AIRFLOW_CTX_TASK_ID='run_model1' AIRFLOW_CTX_EXECUTION_DATE='2024-03-29T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-03-29T00:00:00+00:00'
+[2024-04-01T09:43:30.174+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-04-01T09:43:30.176+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', '/home/***/.local/bin/dbt run --models my_first_dbt_model my_second_dbt_model  --profiles-dir /home/***/.dbt --project-dir /opt/***/proj']
+[2024-04-01T09:43:30.196+0000] {subprocess.py:86} INFO - Output:
+[2024-04-01T09:43:42.010+0000] {subprocess.py:93} INFO - [0m09:43:42  Running with dbt=1.7.10
+[2024-04-01T09:43:43.009+0000] {subprocess.py:93} INFO - [0m09:43:43  Registered adapter: postgres=1.7.10
+[2024-04-01T09:43:43.694+0000] {subprocess.py:93} INFO - [0m09:43:43  Unable to do partial parsing because of a version mismatch
+[2024-04-01T09:45:05.899+0000] {subprocess.py:93} INFO - [0m09:45:05  Found 34 models, 2 operations, 5 tests, 1 source, 0 exposures, 0 metrics, 1407 macros, 0 groups, 0 semantic models
+[2024-04-01T09:45:05.937+0000] {subprocess.py:93} INFO - [0m09:45:05
+[2024-04-01T09:45:07.643+0000] {subprocess.py:93} INFO - [0m09:45:07
+[2024-04-01T09:45:07.677+0000] {subprocess.py:93} INFO - [0m09:45:07  Running 1 on-run-start hook
+[2024-04-01T09:45:07.910+0000] {subprocess.py:93} INFO - [0m09:45:07  1 of 1 START hook: elementary.on-run-start.0 ................................... [RUN]
+[2024-04-01T09:45:07.925+0000] {subprocess.py:93} INFO - [0m09:45:07  1 of 1 OK hook: elementary.on-run-start.0 ...................................... [[32mOK[0m in 0.00s]
+[2024-04-01T09:45:07.936+0000] {subprocess.py:93} INFO - [0m09:45:07
+[2024-04-01T09:45:07.971+0000] {subprocess.py:93} INFO - [0m09:45:07  Concurrency: 1 threads (target='dev')
+[2024-04-01T09:45:07.999+0000] {subprocess.py:93} INFO - [0m09:45:07
+[2024-04-01T09:45:08.051+0000] {subprocess.py:93} INFO - [0m09:45:08  1 of 2 START sql table model public.my_first_dbt_model ......................... [RUN]
+[2024-04-01T09:45:10.213+0000] {subprocess.py:93} INFO - [0m09:45:10  1 of 2 OK created sql table model public.my_first_dbt_model .................... [[32mSELECT 2[0m in 2.15s]
+[2024-04-01T09:45:10.228+0000] {subprocess.py:93} INFO - [0m09:45:10  2 of 2 START sql view model public.my_second_dbt_model ......................... [RUN]
+[2024-04-01T09:45:10.730+0000] {subprocess.py:93} INFO - [0m09:45:10  2 of 2 ERROR creating sql view model public.my_second_dbt_model ................ [[31mERROR[0m in 0.50s]
+[2024-04-01T09:45:10.985+0000] {subprocess.py:93} INFO - [0m09:45:10
+[2024-04-01T09:45:10.989+0000] {subprocess.py:93} INFO - [0m09:45:10  Running 1 on-run-end hook
+[2024-04-01T09:45:41.649+0000] {job.py:213} ERROR - Job heartbeat got an exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 691, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "postgres" to address: Temporary failure in name resolution
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/jobs/job.py", line 187, in heartbeat
+    self._merge_from(Job._fetch_from_db(self, session))
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/api_internal/internal_api_call.py", line 114, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/session.py", line 76, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/jobs/job.py", line 308, in _fetch_from_db
+    session.merge(job)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3056, in merge
+    return self._merge(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3136, in _merge
+    merged = self.get(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 2853, in get
+    return self._get_impl(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 2975, in _get_impl
+    return db_load_fn(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/loading.py", line 530, in load_on_pk_identity
+    session.execute(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 1716, in execute
+    conn = self._connection_for_bind(bind)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 1555, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 750, in _connection_for_bind
+    conn = bind.connect()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/future/engine.py", line 412, in connect
+    return super(Engine, self).connect()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 3325, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 3404, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 3374, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 2208, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 691, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name "postgres" to address: Temporary failure in name resolution
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-04-01T09:45:42.193+0000] {job.py:221} ERROR - Job heartbeat failed with error. Scheduler is in unhealthy state
+[2024-04-01T09:45:58.693+0000] {job.py:221} ERROR - Job heartbeat failed with error. Scheduler is in unhealthy state
+[2024-04-01T09:46:50.749+0000] {subprocess.py:93} INFO - [0m09:46:50  1 of 1 START hook: elementary.on-run-end.0 ..................................... [RUN]
+[2024-04-01T09:46:50.757+0000] {subprocess.py:93} INFO - [0m09:46:50  1 of 1 OK hook: elementary.on-run-end.0 ........................................ [[32mOK[0m in 0.00s]
+[2024-04-01T09:46:50.759+0000] {subprocess.py:93} INFO - [0m09:46:50
+[2024-04-01T09:46:50.813+0000] {subprocess.py:93} INFO - [0m09:46:50
+[2024-04-01T09:46:50.823+0000] {subprocess.py:93} INFO - [0m09:46:50  Finished running 1 table model, 1 view model, 2 hooks in 0 hours 1 minutes and 44.87 seconds (104.87s).
+[2024-04-01T09:46:51.268+0000] {subprocess.py:93} INFO - [0m09:46:51
+[2024-04-01T09:46:51.279+0000] {subprocess.py:93} INFO - [0m09:46:51  [31mCompleted with 1 error and 0 warnings:[0m
+[2024-04-01T09:46:51.298+0000] {subprocess.py:93} INFO - [0m09:46:51
+[2024-04-01T09:46:51.318+0000] {subprocess.py:93} INFO - [0m09:46:51    Database Error in model my_second_dbt_model (models/example/my_second_dbt_model.sql)
+[2024-04-01T09:46:51.328+0000] {subprocess.py:93} INFO -   ERREUR:  la relation « public.my_second_dbt_model » n'existe pas
+[2024-04-01T09:46:51.338+0000] {subprocess.py:93} INFO -   compiled Code at target/run/proj/models/example/my_second_dbt_model.sql
+[2024-04-01T09:46:51.348+0000] {subprocess.py:93} INFO - [0m09:46:51
+[2024-04-01T09:46:51.357+0000] {subprocess.py:93} INFO - [0m09:46:51  Done. PASS=1 WARN=0 ERROR=1 SKIP=0 TOTAL=2
+[2024-04-01T09:46:53.160+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2024-04-01T09:46:53.200+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2024-04-01T09:46:53.210+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=dag___dbt, task_id=run_model1, execution_date=20240329T000000, start_date=20240401T094329, end_date=20240401T094653
+[2024-04-01T09:46:53.248+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 75 for task run_model1 (Bash command failed. The command returned a non-zero exit code 1.; 69)
+[2024-04-01T09:46:53.307+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-04-01T09:46:53.385+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,18 @@
+[2024-04-04T11:42:03.673+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag___fresh.dbt_data_quality_checks manual__2024-04-04T11:41:59.837352+00:00 [queued]>
+[2024-04-04T11:42:03.689+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag___fresh.dbt_data_quality_checks manual__2024-04-04T11:41:59.837352+00:00 [queued]>
+[2024-04-04T11:42:03.690+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2024-04-04T11:42:03.721+0000] {taskinstance.py:2191} INFO - Executing <Task(CustomBashOperator): dbt_data_quality_checks> on 2024-04-04 11:41:59.837352+00:00
+[2024-04-04T11:42:03.730+0000] {standard_task_runner.py:60} INFO - Started process 6902 to run task
+[2024-04-04T11:42:03.736+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'dag___fresh', 'dbt_data_quality_checks', 'manual__2024-04-04T11:41:59.837352+00:00', '--job-id', '404', '--raw', '--subdir', 'DAGS_FOLDER/dbt_dag.py', '--cfg-path', '/tmp/tmpp1ybvb9v']
+[2024-04-04T11:42:03.742+0000] {standard_task_runner.py:88} INFO - Job 404: Subtask dbt_data_quality_checks
+[2024-04-04T11:42:03.827+0000] {task_command.py:423} INFO - Running <TaskInstance: dag___fresh.dbt_data_quality_checks manual__2024-04-04T11:41:59.837352+00:00 [running]> on host 62dc842f1ceb
+[2024-04-04T11:42:03.966+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag___fresh' AIRFLOW_CTX_TASK_ID='dbt_data_quality_checks' AIRFLOW_CTX_EXECUTION_DATE='2024-04-04T11:41:59.837352+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-04-04T11:41:59.837352+00:00'
+[2024-04-04T11:42:31.945+0000] {logging_mixin.py:188} INFO - elementary_freshness_anomalies_raw_orders_creation_date
+[2024-04-04T11:42:31.947+0000] {logging_mixin.py:188} INFO - 1
+[2024-04-04T11:42:31.947+0000] {logging_mixin.py:188} INFO - not_null_my_second_dbt_model_id
+[2024-04-04T11:42:31.948+0000] {logging_mixin.py:188} INFO - not_null_raw_orders_creation_date
+[2024-04-04T11:42:31.949+0000] {logging_mixin.py:188} INFO - unique_my_first_dbt_model_id
+[2024-04-04T11:42:31.949+0000] {logging_mixin.py:188} INFO - unique_my_second_dbt_model_id
+[2024-04-04T11:42:31.982+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=dag___fresh, task_id=dbt_data_quality_checks, execution_date=20240404T114159, start_date=20240404T114203, end_date=20240404T114231
+[2024-04-04T11:42:32.042+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-04-04T11:42:32.070+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check

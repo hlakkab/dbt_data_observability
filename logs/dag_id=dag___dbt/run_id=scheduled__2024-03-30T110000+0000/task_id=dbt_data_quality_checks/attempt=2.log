@@ -1,0 +1,46 @@
+[2024-04-01T09:57:19.394+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag___dbt.dbt_data_quality_checks scheduled__2024-03-30T11:00:00+00:00 [queued]>
+[2024-04-01T09:57:19.418+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag___dbt.dbt_data_quality_checks scheduled__2024-03-30T11:00:00+00:00 [queued]>
+[2024-04-01T09:57:19.425+0000] {taskinstance.py:2170} INFO - Starting attempt 2 of 2
+[2024-04-01T09:57:19.501+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): dbt_data_quality_checks> on 2024-03-30 11:00:00+00:00
+[2024-04-01T09:57:19.515+0000] {standard_task_runner.py:60} INFO - Started process 697 to run task
+[2024-04-01T09:57:19.525+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'dag___dbt', 'dbt_data_quality_checks', 'scheduled__2024-03-30T11:00:00+00:00', '--job-id', '128', '--raw', '--subdir', 'DAGS_FOLDER/dbt_dag.py', '--cfg-path', '/tmp/tmpjdpidy9s']
+[2024-04-01T09:57:19.531+0000] {standard_task_runner.py:88} INFO - Job 128: Subtask dbt_data_quality_checks
+[2024-04-01T09:57:19.749+0000] {task_command.py:423} INFO - Running <TaskInstance: dag___dbt.dbt_data_quality_checks scheduled__2024-03-30T11:00:00+00:00 [running]> on host 62dc842f1ceb
+[2024-04-01T09:57:20.057+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag___dbt' AIRFLOW_CTX_TASK_ID='dbt_data_quality_checks' AIRFLOW_CTX_EXECUTION_DATE='2024-03-30T11:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-03-30T11:00:00+00:00'
+[2024-04-01T09:57:20.063+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-04-01T09:57:20.065+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', '/home/***/.local/bin/dbt test --profiles-dir /home/***/.dbt --project-dir /opt/***/proj']
+[2024-04-01T09:57:20.113+0000] {subprocess.py:86} INFO - Output:
+[2024-04-01T09:57:34.273+0000] {subprocess.py:93} INFO - [0m09:57:34  Running with dbt=1.7.10
+[2024-04-01T09:57:36.208+0000] {subprocess.py:93} INFO - [0m09:57:36  Registered adapter: postgres=1.7.10
+[2024-04-01T09:57:59.201+0000] {subprocess.py:93} INFO - [0m09:57:59  Found 34 models, 2 operations, 5 tests, 1 source, 0 exposures, 0 metrics, 1407 macros, 0 groups, 0 semantic models
+[2024-04-01T09:57:59.221+0000] {subprocess.py:93} INFO - [0m09:57:59
+[2024-04-01T09:58:00.307+0000] {subprocess.py:93} INFO - [0m09:58:00
+[2024-04-01T09:58:00.310+0000] {subprocess.py:93} INFO - [0m09:58:00  Running 1 on-run-start hook
+[2024-04-01T09:58:00.812+0000] {subprocess.py:93} INFO - [0m09:58:00  1 of 1 START hook: elementary.on-run-start.0 ................................... [RUN]
+[2024-04-01T09:58:00.816+0000] {subprocess.py:93} INFO - [0m09:58:00  1 of 1 OK hook: elementary.on-run-start.0 ...................................... [[32mOK[0m in 0.00s]
+[2024-04-01T09:58:00.821+0000] {subprocess.py:93} INFO - [0m09:58:00
+[2024-04-01T09:58:00.837+0000] {subprocess.py:93} INFO - [0m09:58:00  Concurrency: 1 threads (target='dev')
+[2024-04-01T09:58:00.842+0000] {subprocess.py:93} INFO - [0m09:58:00
+[2024-04-01T09:58:00.882+0000] {subprocess.py:93} INFO - [0m09:58:00  1 of 5 START test elementary_freshness_anomalies_raw_orders_creation_date ...... [RUN]
+[2024-04-01T09:58:02.879+0000] {subprocess.py:93} INFO - [0m09:58:02  Elementary: Started running data monitors on: POSTGRES.PUBLIC.RAW_ORDERS
+[2024-04-01T09:58:04.446+0000] {subprocess.py:93} INFO - [0m09:58:04  Elementary: Finished running data monitors on: POSTGRES.PUBLIC.RAW_ORDERS
+[2024-04-01T09:58:06.881+0000] {subprocess.py:93} INFO - [0m09:58:06  [31mUnhandled error while executing target/run/proj/models/example/schema.yml/elementary_freshness_anomalies_raw_orders_creation_date.sql[0m
+[2024-04-01T09:58:06.888+0000] {subprocess.py:93} INFO - [Errno 5] Input/output error: '/opt/***/proj/target/run/proj/models/example/schema.yml/elementary_freshness_anomalies_raw_orders_creation_date.sql'
+[2024-04-01T09:58:06.992+0000] {subprocess.py:93} INFO - [0m09:58:06  1 of 5 ERROR elementary_freshness_anomalies_raw_orders_creation_date ........... [[31mERROR[0m in 6.10s]
+[2024-04-01T09:58:07.012+0000] {subprocess.py:93} INFO - [0m09:58:07  2 of 5 START test not_null_my_second_dbt_model_id .............................. [RUN]
+[2024-04-01T09:58:07.592+0000] {subprocess.py:93} INFO - [0m09:58:07  2 of 5 ERROR not_null_my_second_dbt_model_id ................................... [[31mERROR[0m in 0.57s]
+[2024-04-01T09:58:07.607+0000] {subprocess.py:93} INFO - [0m09:58:07  3 of 5 START test not_null_raw_orders_creation_date ............................ [RUN]
+[2024-04-01T09:58:08.787+0000] {subprocess.py:93} INFO - [0m09:58:08  3 of 5 PASS not_null_raw_orders_creation_date .................................. [[32mPASS[0m in 1.17s]
+[2024-04-01T09:58:08.839+0000] {subprocess.py:93} INFO - [0m09:58:08  4 of 5 START test unique_my_first_dbt_model_id ................................. [RUN]
+[2024-04-01T09:58:09.825+0000] {subprocess.py:93} INFO - [0m09:58:09  4 of 5 PASS unique_my_first_dbt_model_id ....................................... [[32mPASS[0m in 0.97s]
+[2024-04-01T09:58:09.920+0000] {subprocess.py:93} INFO - [0m09:58:09  5 of 5 START test unique_my_second_dbt_model_id ................................ [RUN]
+[2024-04-01T09:58:11.141+0000] {subprocess.py:93} INFO - [0m09:58:11  5 of 5 ERROR unique_my_second_dbt_model_id ..................................... [[31mERROR[0m in 1.22s]
+[2024-04-01T09:58:11.428+0000] {subprocess.py:93} INFO - [0m09:58:11
+[2024-04-01T09:58:11.445+0000] {subprocess.py:93} INFO - [0m09:58:11  Running 1 on-run-end hook
+[2024-04-01T09:58:16.155+0000] {local_task_job_runner.py:302} WARNING - State of this instance has been externally set to removed. Terminating instance.
+[2024-04-01T09:58:16.213+0000] {process_utils.py:131} INFO - Sending 15 to group 697. PIDs of all processes in the group: [703, 697]
+[2024-04-01T09:58:16.282+0000] {process_utils.py:86} INFO - Sending the signal 15 to group 697
+[2024-04-01T09:58:16.311+0000] {taskinstance.py:2450} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-04-01T09:58:16.321+0000] {subprocess.py:104} INFO - Sending SIGTERM signal to process group
+[2024-04-01T09:58:16.547+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=703, status='terminated', started='09:57:19') (703) terminated with exit code None
+[2024-04-01T09:58:16.576+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=697, status='terminated', exitcode=0, started='09:57:18') (697) terminated with exit code 0

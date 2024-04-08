@@ -1,0 +1,64 @@
+[2024-04-01T09:59:29.164+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag___dbt.dbt_data_quality_checks scheduled__2024-03-30T00:00:00+00:00 [queued]>
+[2024-04-01T09:59:29.222+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag___dbt.dbt_data_quality_checks scheduled__2024-03-30T00:00:00+00:00 [queued]>
+[2024-04-01T09:59:29.223+0000] {taskinstance.py:2170} INFO - Starting attempt 3 of 2
+[2024-04-01T09:59:29.283+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): dbt_data_quality_checks> on 2024-03-30 00:00:00+00:00
+[2024-04-01T09:59:29.306+0000] {standard_task_runner.py:60} INFO - Started process 838 to run task
+[2024-04-01T09:59:29.314+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'dag___dbt', 'dbt_data_quality_checks', 'scheduled__2024-03-30T00:00:00+00:00', '--job-id', '142', '--raw', '--subdir', 'DAGS_FOLDER/dbt_dag.py', '--cfg-path', '/tmp/tmp3snibge7']
+[2024-04-01T09:59:29.323+0000] {standard_task_runner.py:88} INFO - Job 142: Subtask dbt_data_quality_checks
+[2024-04-01T09:59:29.506+0000] {task_command.py:423} INFO - Running <TaskInstance: dag___dbt.dbt_data_quality_checks scheduled__2024-03-30T00:00:00+00:00 [running]> on host 62dc842f1ceb
+[2024-04-01T09:59:29.786+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag___dbt' AIRFLOW_CTX_TASK_ID='dbt_data_quality_checks' AIRFLOW_CTX_EXECUTION_DATE='2024-03-30T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-03-30T00:00:00+00:00'
+[2024-04-01T09:59:29.791+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-04-01T09:59:29.794+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', '/home/***/.local/bin/dbt test --profiles-dir /home/***/.dbt --project-dir /opt/***/proj']
+[2024-04-01T09:59:29.834+0000] {subprocess.py:86} INFO - Output:
+[2024-04-01T09:59:49.109+0000] {subprocess.py:93} INFO - [0m09:59:49  Running with dbt=1.7.10
+[2024-04-01T09:59:53.753+0000] {subprocess.py:93} INFO - [0m09:59:53  Registered adapter: postgres=1.7.10
+[2024-04-01T09:59:55.516+0000] {subprocess.py:93} INFO - [0m09:59:55  Unable to do partial parsing because of a version mismatch
+[2024-04-01T10:00:15.286+0000] {subprocess.py:93} INFO - [0m10:00:15  Encountered an error:
+[2024-04-01T10:00:15.292+0000] {subprocess.py:93} INFO - [Errno 5] Input/output error: '/opt/***/proj/dbt_packages/dbt_utils/macros/web/get_url_host.sql'
+[2024-04-01T10:00:15.348+0000] {subprocess.py:93} INFO - [0m10:00:15  Traceback (most recent call last):
+[2024-04-01T10:00:15.349+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/cli/requires.py", line 91, in wrapper
+[2024-04-01T10:00:15.352+0000] {subprocess.py:93} INFO -     result, success = func(*args, **kwargs)
+[2024-04-01T10:00:15.353+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/cli/requires.py", line 76, in wrapper
+[2024-04-01T10:00:15.354+0000] {subprocess.py:93} INFO -     return func(*args, **kwargs)
+[2024-04-01T10:00:15.355+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/cli/requires.py", line 169, in wrapper
+[2024-04-01T10:00:15.366+0000] {subprocess.py:93} INFO -     return func(*args, **kwargs)
+[2024-04-01T10:00:15.368+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/cli/requires.py", line 198, in wrapper
+[2024-04-01T10:00:15.375+0000] {subprocess.py:93} INFO -     return func(*args, **kwargs)
+[2024-04-01T10:00:15.378+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/cli/requires.py", line 245, in wrapper
+[2024-04-01T10:00:15.380+0000] {subprocess.py:93} INFO -     return func(*args, **kwargs)
+[2024-04-01T10:00:15.387+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/cli/requires.py", line 271, in wrapper
+[2024-04-01T10:00:15.395+0000] {subprocess.py:93} INFO -     ctx.obj["manifest"] = parse_manifest(
+[2024-04-01T10:00:15.418+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/parser/manifest.py", line 1798, in parse_manifest
+[2024-04-01T10:00:15.434+0000] {subprocess.py:93} INFO -     manifest = ManifestLoader.get_full_manifest(
+[2024-04-01T10:00:15.442+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/parser/manifest.py", line 318, in get_full_manifest
+[2024-04-01T10:00:15.451+0000] {subprocess.py:93} INFO -     manifest = loader.load()
+[2024-04-01T10:00:15.452+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/parser/manifest.py", line 365, in load
+[2024-04-01T10:00:15.454+0000] {subprocess.py:93} INFO -     file_reader.read_files()
+[2024-04-01T10:00:15.455+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/parser/read_files.py", line 203, in read_files
+[2024-04-01T10:00:15.456+0000] {subprocess.py:93} INFO -     self.read_files_for_project(project, file_types)
+[2024-04-01T10:00:15.466+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/parser/read_files.py", line 210, in read_files_for_project
+[2024-04-01T10:00:15.469+0000] {subprocess.py:93} INFO -     project_files[file_type_info["parser"]] = read_files_for_parser(
+[2024-04-01T10:00:15.470+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/parser/read_files.py", line 158, in read_files_for_parser
+[2024-04-01T10:00:15.471+0000] {subprocess.py:93} INFO -     source_files = get_source_files(
+[2024-04-01T10:00:15.472+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/parser/read_files.py", line 134, in get_source_files
+[2024-04-01T10:00:15.474+0000] {subprocess.py:93} INFO -     fp_list = filesystem_search(project, paths, extension, ignore_spec)
+[2024-04-01T10:00:15.486+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/parser/search.py", line 74, in filesystem_search
+[2024-04-01T10:00:15.489+0000] {subprocess.py:93} INFO -     for result in find_matching(root, relative_dirs, ext, ignore_spec):
+[2024-04-01T10:00:15.500+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/dbt/clients/system.py", line 79, in find_matching
+[2024-04-01T10:00:15.501+0000] {subprocess.py:93} INFO -     modification_time = os.path.getmtime(absolute_path)
+[2024-04-01T10:00:15.504+0000] {subprocess.py:93} INFO -   File "/usr/local/lib/python3.8/genericpath.py", line 55, in getmtime
+[2024-04-01T10:00:15.505+0000] {subprocess.py:93} INFO -     return os.stat(filename).st_mtime
+[2024-04-01T10:00:15.509+0000] {subprocess.py:93} INFO - OSError: [Errno 5] Input/output error: '/opt/***/proj/dbt_packages/dbt_utils/macros/web/get_url_host.sql'
+[2024-04-01T10:00:15.510+0000] {subprocess.py:93} INFO - 
+[2024-04-01T10:00:18.150+0000] {subprocess.py:97} INFO - Command exited with return code 2
+[2024-04-01T10:00:18.277+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 2.
+[2024-04-01T10:00:18.352+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=dag___dbt, task_id=dbt_data_quality_checks, execution_date=20240330T000000, start_date=20240401T095929, end_date=20240401T100018
+[2024-04-01T10:00:18.544+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 142 for task dbt_data_quality_checks (Bash command failed. The command returned a non-zero exit code 2.; 838)
+[2024-04-01T10:00:18.720+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-04-01T10:00:18.897+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

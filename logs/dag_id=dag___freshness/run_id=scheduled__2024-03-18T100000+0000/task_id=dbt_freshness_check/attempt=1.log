@@ -1,0 +1,19 @@
+[2024-04-01T10:04:33.271+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag___freshness.dbt_freshness_check scheduled__2024-03-18T10:00:00+00:00 [queued]>
+[2024-04-01T10:04:33.321+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag___freshness.dbt_freshness_check scheduled__2024-03-18T10:00:00+00:00 [queued]>
+[2024-04-01T10:04:33.323+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2024-04-01T10:04:33.441+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): dbt_freshness_check> on 2024-03-18 10:00:00+00:00
+[2024-04-01T10:04:33.501+0000] {standard_task_runner.py:60} INFO - Started process 1166 to run task
+[2024-04-01T10:04:33.571+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'dag___freshness', 'dbt_freshness_check', 'scheduled__2024-03-18T10:00:00+00:00', '--job-id', '178', '--raw', '--subdir', 'DAGS_FOLDER/freshness_test_dag.py', '--cfg-path', '/tmp/tmpkys_q2kk']
+[2024-04-01T10:04:33.619+0000] {standard_task_runner.py:88} INFO - Job 178: Subtask dbt_freshness_check
+[2024-04-01T10:04:33.877+0000] {task_command.py:423} INFO - Running <TaskInstance: dag___freshness.dbt_freshness_check scheduled__2024-03-18T10:00:00+00:00 [running]> on host 62dc842f1ceb
+[2024-04-01T10:04:34.801+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag___freshness' AIRFLOW_CTX_TASK_ID='dbt_freshness_check' AIRFLOW_CTX_EXECUTION_DATE='2024-03-18T10:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-03-18T10:00:00+00:00'
+[2024-04-01T10:04:34.807+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-04-01T10:04:34.814+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', '/home/***/.local/bin/dbt source freshness --profiles-dir /home/***/.dbt --project-dir /opt/***/proj']
+[2024-04-01T10:04:34.879+0000] {subprocess.py:86} INFO - Output:
+[2024-04-01T10:04:43.935+0000] {local_task_job_runner.py:302} WARNING - State of this instance has been externally set to removed. Terminating instance.
+[2024-04-01T10:04:43.945+0000] {process_utils.py:131} INFO - Sending 15 to group 1166. PIDs of all processes in the group: [1168, 1166]
+[2024-04-01T10:04:43.960+0000] {process_utils.py:86} INFO - Sending the signal 15 to group 1166
+[2024-04-01T10:04:43.962+0000] {taskinstance.py:2450} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-04-01T10:04:43.963+0000] {subprocess.py:104} INFO - Sending SIGTERM signal to process group
+[2024-04-01T10:04:44.182+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=1166, status='terminated', exitcode=0, started='10:04:32') (1166) terminated with exit code 0
+[2024-04-01T10:04:44.185+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=1168, status='terminated', started='10:04:34') (1168) terminated with exit code None

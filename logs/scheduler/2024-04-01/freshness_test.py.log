@@ -1,0 +1,46 @@
+[2024-04-01T10:15:06.561+0000] {processor.py:161} INFO - Started process (PID=1410) to work on /opt/airflow/dags/freshness_test.py
+[2024-04-01T10:15:06.563+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshness_test.py for tasks to queue
+[2024-04-01T10:15:06.565+0000] {logging_mixin.py:188} INFO - [2024-04-01T10:15:06.564+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshness_test.py
+[2024-04-01T10:15:06.588+0000] {processor.py:840} INFO - DAG(s) 'freshness___test' retrieved from /opt/airflow/dags/freshness_test.py
+[2024-04-01T10:15:06.818+0000] {logging_mixin.py:188} INFO - [2024-04-01T10:15:06.816+0000] {override.py:1769} INFO - Created Permission View: can delete on DAG:freshness___test
+[2024-04-01T10:15:06.836+0000] {logging_mixin.py:188} INFO - [2024-04-01T10:15:06.836+0000] {override.py:1769} INFO - Created Permission View: can read on DAG:freshness___test
+[2024-04-01T10:15:06.850+0000] {logging_mixin.py:188} INFO - [2024-04-01T10:15:06.850+0000] {override.py:1769} INFO - Created Permission View: can edit on DAG:freshness___test
+[2024-04-01T10:15:06.852+0000] {logging_mixin.py:188} INFO - [2024-04-01T10:15:06.851+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-01T10:15:06.878+0000] {logging_mixin.py:188} INFO - [2024-04-01T10:15:06.877+0000] {dag.py:3058} INFO - Creating ORM DAG for freshness___test
+[2024-04-01T10:15:06.898+0000] {logging_mixin.py:188} INFO - [2024-04-01T10:15:06.897+0000] {dag.py:3823} INFO - Setting next_dagrun for freshness___test to 2024-03-31 00:00:00+00:00, run_after=2024-04-01 00:00:00+00:00
+[2024-04-01T10:15:06.928+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshness_test.py took 0.374 seconds
+[2024-04-01T10:15:37.388+0000] {processor.py:161} INFO - Started process (PID=1473) to work on /opt/airflow/dags/freshness_test.py
+[2024-04-01T10:15:37.390+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshness_test.py for tasks to queue
+[2024-04-01T10:15:37.391+0000] {logging_mixin.py:188} INFO - [2024-04-01T10:15:37.391+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshness_test.py
+[2024-04-01T10:15:37.412+0000] {processor.py:840} INFO - DAG(s) 'freshness___test' retrieved from /opt/airflow/dags/freshness_test.py
+[2024-04-01T10:15:37.444+0000] {logging_mixin.py:188} INFO - [2024-04-01T10:15:37.443+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-01T10:15:37.472+0000] {logging_mixin.py:188} INFO - [2024-04-01T10:15:37.471+0000] {dag.py:3823} INFO - Setting next_dagrun for freshness___test to 2024-04-01 00:00:00+00:00, run_after=2024-04-02 00:00:00+00:00
+[2024-04-01T10:15:37.498+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshness_test.py took 0.115 seconds
+[2024-04-01T10:16:07.843+0000] {processor.py:161} INFO - Started process (PID=1532) to work on /opt/airflow/dags/freshness_test.py
+[2024-04-01T10:16:07.844+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshness_test.py for tasks to queue
+[2024-04-01T10:16:07.846+0000] {logging_mixin.py:188} INFO - [2024-04-01T10:16:07.845+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshness_test.py
+[2024-04-01T10:16:07.862+0000] {processor.py:840} INFO - DAG(s) 'freshness___test' retrieved from /opt/airflow/dags/freshness_test.py
+[2024-04-01T10:16:07.886+0000] {logging_mixin.py:188} INFO - [2024-04-01T10:16:07.885+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-01T10:16:07.908+0000] {logging_mixin.py:188} INFO - [2024-04-01T10:16:07.908+0000] {dag.py:3823} INFO - Setting next_dagrun for freshness___test to 2024-04-01 00:00:00+00:00, run_after=2024-04-02 00:00:00+00:00
+[2024-04-01T10:16:07.929+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshness_test.py took 0.090 seconds
+[2024-04-01T10:16:38.462+0000] {processor.py:161} INFO - Started process (PID=1591) to work on /opt/airflow/dags/freshness_test.py
+[2024-04-01T10:16:38.464+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshness_test.py for tasks to queue
+[2024-04-01T10:16:38.465+0000] {logging_mixin.py:188} INFO - [2024-04-01T10:16:38.465+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshness_test.py
+[2024-04-01T10:16:38.484+0000] {processor.py:840} INFO - DAG(s) 'freshness___test' retrieved from /opt/airflow/dags/freshness_test.py
+[2024-04-01T10:16:38.512+0000] {logging_mixin.py:188} INFO - [2024-04-01T10:16:38.512+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-01T10:16:38.540+0000] {logging_mixin.py:188} INFO - [2024-04-01T10:16:38.539+0000] {dag.py:3823} INFO - Setting next_dagrun for freshness___test to 2024-04-01 00:00:00+00:00, run_after=2024-04-02 00:00:00+00:00
+[2024-04-01T10:16:38.571+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshness_test.py took 0.115 seconds
+[2024-04-01T10:17:08.790+0000] {processor.py:161} INFO - Started process (PID=1650) to work on /opt/airflow/dags/freshness_test.py
+[2024-04-01T10:17:08.792+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshness_test.py for tasks to queue
+[2024-04-01T10:17:08.794+0000] {logging_mixin.py:188} INFO - [2024-04-01T10:17:08.793+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshness_test.py
+[2024-04-01T10:17:08.814+0000] {processor.py:840} INFO - DAG(s) 'freshness___test' retrieved from /opt/airflow/dags/freshness_test.py
+[2024-04-01T10:17:08.844+0000] {logging_mixin.py:188} INFO - [2024-04-01T10:17:08.843+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-01T10:17:08.875+0000] {logging_mixin.py:188} INFO - [2024-04-01T10:17:08.875+0000] {dag.py:3823} INFO - Setting next_dagrun for freshness___test to 2024-04-01 00:00:00+00:00, run_after=2024-04-02 00:00:00+00:00
+[2024-04-01T10:17:08.901+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshness_test.py took 0.117 seconds
+[2024-04-01T10:17:39.062+0000] {processor.py:161} INFO - Started process (PID=1709) to work on /opt/airflow/dags/freshness_test.py
+[2024-04-01T10:17:39.063+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/freshness_test.py for tasks to queue
+[2024-04-01T10:17:39.064+0000] {logging_mixin.py:188} INFO - [2024-04-01T10:17:39.064+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/freshness_test.py
+[2024-04-01T10:17:39.082+0000] {processor.py:840} INFO - DAG(s) 'freshness___test' retrieved from /opt/airflow/dags/freshness_test.py
+[2024-04-01T10:17:39.108+0000] {logging_mixin.py:188} INFO - [2024-04-01T10:17:39.107+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-04-01T10:17:39.138+0000] {logging_mixin.py:188} INFO - [2024-04-01T10:17:39.138+0000] {dag.py:3823} INFO - Setting next_dagrun for freshness___test to 2024-04-01 00:00:00+00:00, run_after=2024-04-02 00:00:00+00:00
+[2024-04-01T10:17:39.172+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/freshness_test.py took 0.114 seconds
